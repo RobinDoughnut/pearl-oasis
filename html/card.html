@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            /* Fixed height */
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            /* Ensures content doesn't overflow */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-details h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .product-details p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .additional-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            overflow: hidden;
+            /* Hide content initially */
+            opacity: 0;
+            transition: height 0.3s ease, opacity 0.3s ease;
+        }
+
+        .product-card:hover .additional-content {
+            height: 150px;
+            /* Expand to reveal content */
+            opacity: 1;
+        }
+
+        .additional-content button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff7c5c;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .additional-content button:hover {
+            background: #ff5a36;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/200" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h3>Product Name</h3>
+            <p>$99.99</p>
+        </div>
+        <div class="additional-content">
+            <p>This premium-quality product is crafted with exceptional materials. Available now in multiple sizes and
+                colors.</p>
+            <button>View Product</button>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

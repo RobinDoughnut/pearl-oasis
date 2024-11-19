@@ -1,0 +1,131 @@
+<?php 
+$index = 0;
+require "../includes/getData.php" ;?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/products.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../html/index.html">Home</a>
+            <a href="../html/products.html">Products</a>
+            <a href="../html/index.html#category">Categories</a>
+            <a href="../html/about_us.html">About Us</a>
+        </div>
+
+
+        <div class="container">
+            <div class="logo">
+                <img src ="../img/Pearl Oasis logo.png" class="logo-main" alt="">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="link" href="../html/index.html">Home</a></li>
+                    <li><a class="link" href="../html/products.html">Products</a></li>
+                    <li><a class="link" href="../html/index.html#category">Categories</a></li>
+                    <li><a class="link" href="../html/about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="links">
+
+                <a href=""><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
+                <a href=""><img class="link-img" src="../img/Vector.svg" alt=""></a>
+                <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
+                </button>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="products">
+            <h1>Products</h1>
+            <?php 
+           
+            for($j = 0; $j < 6; $j++) {
+                $i = 0;   
+            ?>
+                
+                    
+                    <h3><?php echo ucwords($category[$index]); ?></h3>
+                    <div id="carouselExampleControls-<?php echo $j; ?>" class="carousel slide" data-bs-ride="carousel">
+                    
+                        <div class="carousel-inner" id="carousel<?php echo $j; ?>">
+                            
+                                <?php foreach ($results as $result) { 
+                                        $product_name = htmlspecialchars($result["product_name"]);
+                                        $img =  htmlspecialchars($result["img"]);
+                                        $description =  htmlspecialchars($result["description"]);
+                                        
+                                        
+                                        
+                                        ?>
+                                <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
+                                    
+                                    
+                                    
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="<?php echo $img?>" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"><?php echo $product_name; ?></h5>
+                                            <p class="card-text"><?php echo $description; ?></p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                <?php $i= 1;} ?>
+                            
+                            
+                    
+                            </div>
+                            <button id="prev<?php echo $j; ?>"class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button id="next<?php echo $j; ?>"class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                </div>
+            <?php 
+            $index++;
+            require "../includes/getData.php" ;
+            $i=1;
+            } ?>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    
+    <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="../js/carousel.js"></script>
+        
+    
+</body>
+
+
+</html>
