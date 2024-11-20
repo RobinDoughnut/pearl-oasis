@@ -149,6 +149,79 @@ main {
     
 }
 
+.about {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about .para {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.store-image {
+    max-width: 400px;
+    text-align: center;
+}
+
+.store-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+} */
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the layout adjusts on smaller screens */
+    gap: 20px;
+    justify-content: center; /* Centers the images horizontally */
+    margin: 20px 0;
+}
+
+.store-image {
+    text-align: center;
+    flex: 1 1 45%; /* Makes each image container take up 45% of the row, adjusts on smaller screens */
+    max-width: 500px; /* Prevents containers from becoming too large */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-image h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.store-img {
+    width: 100%; /* Ensures images fit within their container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-img:hover {
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 footer {
     position: fixed;
     bottom: 0;
