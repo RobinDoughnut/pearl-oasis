@@ -189,7 +189,41 @@ main {
     }
 
     
-  
+    .additional-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        /* Hide content initially */
+        opacity: 0;
+        transition: height 0.5s ease, opacity 0.3s ease;
+    }
+
+    .card:hover .additional-content {
+        height: 100%;
+        /* Expand to reveal content */
+        opacity: 1;
+    }
+
+    .additional-content button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #ff7c5c;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .additional-content button:hover {
+        background: #ff5a36;
+    }
 
     img {
         height: 100%;
