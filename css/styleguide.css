@@ -1,77 +1,76 @@
 :root {
-    /* ========== Color Palette ========== */
-    /* Primary Brand Colors */
-    --color-primary: #007BFF; /* Primary brand color (e.g., blue) */
-    --color-primary-light: #5AAEFF; /* Lighter shade of primary color */
-    --color-primary-dark: #0056B3; /* Darker shade of primary color */
-  
-    /* Secondary Brand Colors */
-    --color-secondary: #6C757D; /* Neutral secondary color */
-    --color-secondary-light: #ADB5BD; /* Light secondary color */
-    --color-secondary-dark: #495057; /* Dark secondary color */
-  
-    /* Neutral Colors */
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-gray-light: #F8F9FA;
-    --color-gray: #DEE2E6;
-    --color-gray-dark: #343A40;
-  
-    /* Feedback Colors */
-    --color-success: #28A745; /* Success feedback (green) */
-    --color-error: #DC3545; /* Error feedback (red) */
-    --color-warning: #FFC107; /* Warning feedback (yellow) */
-    --color-info: #17A2B8; /* Informational feedback (cyan) */
-  
-    /* ========== Typography ========== */
-    /* Font Families */
-    --font-family-primary: 'Arial', sans-serif; /* Main font */
-    --font-family-secondary: 'Georgia', serif; /* Accent font (e.g., for headings) */
-  
-    /* Font Sizes */
-    --font-size-base: 16px; /* Base font size */
-    --font-size-sm: 14px; /* Small font size */
-    --font-size-lg: 18px; /* Large font size */
-    --font-size-h1: 32px; /* Heading 1 */
-    --font-size-h2: 28px; /* Heading 2 */
-    --font-size-h3: 24px; /* Heading 3 */
-  
-    /* Line Heights */
-    --line-height-base: 1.6; /* Base line height */
-    --line-height-heading: 1.2; /* Line height for headings */
-  
-    /* Font Weights */
-    --font-weight-normal: 400; /* Normal weight */
-    --font-weight-bold: 700; /* Bold weight */
-  
-    /* ========== Spacing ========== */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-  
-    /* ========== Borders ========== */
-    --border-radius-sm: 4px;
-    --border-radius-md: 8px;
-    --border-radius-lg: 12px;
-    --border-width: 1px;
-    --border-color: var(--color-gray);
-  
-    /* ========== Shadows ========== */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.2);
-  
-    /* ========== Transitions ========== */
-    --transition-fast: 0.2s ease-in-out;
-    --transition-medium: 0.3s ease-in-out;
-    --transition-slow: 0.5s ease-in-out;
-  
-    /* ========== Breakpoints ========== */
-    --breakpoint-xs: 480px;
-    --breakpoint-sm: 768px;
-    --breakpoint-md: 1024px;
-    --breakpoint-lg: 1200px;
-  }
-  
+  /* ========== Color Palette ========== */
+  /* Primary Brand Colors */
+  --color-primary: #FBF6EF; /* Primary brand color (e.g., blue) */
+  --color-primary-light: #5AAEFF; /* Lighter shade of primary color */
+  --color-primary-dark: #0056B3; /* Darker shade of primary color */
+
+  /* Secondary Brand Colors */
+  --color-secondary: #6C757D; /* Neutral secondary color */
+  --color-secondary-light: #ADB5BD; /* Light secondary color */
+  --color-secondary-dark: #495057; /* Dark secondary color */
+
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-light: #F8F9FA;
+  --color-gray: #DEE2E6;
+  --color-gray-dark: #343A40;
+
+  /* Feedback Colors */
+  --color-success: #28A745; /* Success feedback (green) */
+  --color-error: #DC3545; /* Error feedback (red) */
+  --color-warning: #FFC107; /* Warning feedback (yellow) */
+  --color-info: #17A2B8; /* Informational feedback (cyan) */
+
+  /* ========== Typography ========== */
+  /* Font Families */
+  --font-family-primary: 'Arial', sans-serif; /* Main font */
+  --font-family-secondary: 'Georgia', serif; /* Accent font (e.g., for headings) */
+
+  /* Font Sizes */
+  --font-size-base: 16px; /* Base font size */
+  --font-size-sm: 14px; /* Small font size */
+  --font-size-lg: 18px; /* Large font size */
+  --font-size-h1: 32px; /* Heading 1 */
+  --font-size-h2: 28px; /* Heading 2 */
+  --font-size-h3: 24px; /* Heading 3 */
+
+  /* Line Heights */
+  --line-height-base: 1.6; /* Base line height */
+  --line-height-heading: 1.2; /* Line height for headings */
+
+  /* Font Weights */
+  --font-weight-normal: 400; /* Normal weight */
+  --font-weight-bold: 700; /* Bold weight */
+
+  /* ========== Spacing ========== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* ========== Borders ========== */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-width: 1px;
+  --border-color: var(--color-gray);
+
+  /* ========== Shadows ========== */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+  /* ========== Transitions ========== */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* ========== Breakpoints ========== */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1200px;
+}

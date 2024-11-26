@@ -10,7 +10,7 @@
 }
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   /* Helps you visualize the boundaries of each element */
 }
 
@@ -21,8 +21,14 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  background: #F8F0E3;
+  background: #FBF6EF;
   /* Ensure full width */
+  
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 header {
@@ -37,6 +43,7 @@ body {
 
 h1 {
   font-size: 64px;
+  font-weight: 100;
 }
 
 div {
@@ -49,8 +56,8 @@ div {
   background-color: transparent;
 }
 li a:hover {
-  background-color: #877b68;
-  color: #f8f0e3;
+  background-color: #00263D;
+  color: white;
 }
 .logo {
   height: 80%;

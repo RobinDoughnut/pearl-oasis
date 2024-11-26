@@ -13,7 +13,10 @@ require "../includes/getData.php"; ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/products.css" />
     <script src="jquery-3.7.1.js"></script>
     <script src="../js/main.js"></script>
@@ -62,60 +65,63 @@ require "../includes/getData.php"; ?>
                 $i = 0;
                 ?>
 
+                <div style="margin-top: 32px;">
+                    <h3><?php echo ucwords($category[$index]); ?></h3>
+                    <div id="carouselExampleControls-<?php echo $j; ?>" class="carousel slide" data-bs-ride="carousel">
 
-                <h3><?php echo ucwords($category[$index]); ?></h3>
-                <div id="carouselExampleControls-<?php echo $j; ?>" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carousel<?php echo $j; ?>">
 
-                    <div class="carousel-inner" id="carousel<?php echo $j; ?>">
-
-                        <?php foreach ($results as $result) {
-                            $product_name = htmlspecialchars($result["product_name"]);
-                            $img = htmlspecialchars($result["img"]);
-                            $description = htmlspecialchars($result["description"]);
-
-
-
-                            ?>
-                            <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
+                            <?php foreach ($results as $result) {
+                                $product_name = htmlspecialchars($result["product_name"]);
+                                $img = htmlspecialchars($result["img"]);
+                                $description = htmlspecialchars($result["description"]);
 
 
 
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="<?php echo $img ?>" class="d-block w-100" alt="...">
+                                ?>
+                                <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
+
+
+
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="<?php echo $img ?>" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title"><?php echo $product_name; ?></h5>
+                                            <p class="card-text"><?php echo $description; ?></p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                        <div class="additional-content">
+                                            <p>This premium-quality product is crafted with exceptional materials. Available now
+                                                in
+                                                multiple sizes and
+                                                colors.</p>
+                                            <button>View Product</button>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><?php echo $product_name; ?></h5>
-                                        <p class="card-text"><?php echo $description; ?></p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                    <div class="additional-content">
-                                        <p>This premium-quality product is crafted with exceptional materials. Available now in
-                                            multiple sizes and
-                                            colors.</p>
-                                        <button>View Product</button>
-                                    </div>
+
+
+
                                 </div>
+                                <?php $i = 1;
+                            } ?>
 
 
 
-                            </div>
-                            <?php $i = 1;
-                        } ?>
-
-
-
+                        </div>
+                        <button id="prev<?php echo $j; ?>" class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button id="next<?php echo $j; ?>" class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button id="prev<?php echo $j; ?>" class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button id="next<?php echo $j; ?>" class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleControls-<?php echo $j; ?>" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
                 </div>
                 <?php
                 $index++;
