@@ -97,7 +97,7 @@ require "../includes/getData.php"; ?>
                                                 in
                                                 multiple sizes and
                                                 colors.</p>
-                                            <button>View Product</button>
+                                            <a href="https://www.facebook.com/"><button>Pricing</button></a>
                                         </div>
                                     </div>
 

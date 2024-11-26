@@ -38,7 +38,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background: #F8F0E3;
+    background: #FBF6EF;
 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -53,7 +53,7 @@ header {
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
 
-    background-color: #F8F0E3;
+    background-color: #FBF6EF;
     top: 0;
     position: sticky;
     
@@ -135,8 +135,14 @@ header {
                 object-fit: cover;
                 justify-content: center;
                 transform: scale(0.8);
+                border-radius: 8px;
+                transform: scale(0.8);
+                transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-out;
             }
-
+            .link-img:hover {
+                transform: scale(.9);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+              }
             .menu {
                 visibility: hidden;
                 position: absolute;
@@ -232,16 +238,16 @@ main {
     .additional-content button {
         margin-top: 10px;
         padding: 10px 20px;
-        background: #ff7c5c;
+        background: #a6e3e9;
         border: none;
-        color: #fff;
+        color: black;
         border-radius: 5px;
         cursor: pointer;
         transition: background 0.3s ease;
     }
 
     .additional-content button:hover {
-        background: #ff5a36;
+        background: #94f4ff;
     }
 
     img {

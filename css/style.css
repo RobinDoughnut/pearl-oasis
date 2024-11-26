@@ -23,7 +23,7 @@ body {
   width: 100vw;
   background: #FBF6EF;
   /* Ensure full width */
-  
+
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -34,6 +34,9 @@ body {
 header {
   margin: 0 0;
   justify-content: center;
+  background-color: #FBF6EF;
+  top: 0;
+  position: sticky;
 }
 
 body {
@@ -46,8 +49,8 @@ h1 {
   font-weight: 100;
 }
 
-div {
-}
+div {}
+
 .link {
   padding: 10px 20px;
   border-radius: 5px;
@@ -55,10 +58,12 @@ div {
 
   background-color: transparent;
 }
+
 li a:hover {
   background-color: #00263D;
   color: white;
 }
+
 .logo {
   height: 80%;
   display: flex;
@@ -69,7 +74,7 @@ li a:hover {
   height: 80%;
   width: 100%;
   content: url("../img/Pearl Oasis logo.png");
-  
+
 }
 
 .navbar ul {
@@ -125,8 +130,7 @@ body .landing-img {
   filter: brightness(0.9) contrast(1.2) drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
 }
 
-body .tagline {
-}
+body .tagline {}
 
 body .landing-text {
   position: absolute;
@@ -159,13 +163,13 @@ body .category-grid {
 .carousel-item {
   overflow: hidden;
   border-radius: 16px;
- 
+
 }
 
 
 
-.carousel-inner {
-}
+.carousel-inner {}
+
 body .text {
   margin-top: 64px;
   margin-bottom: 32px;
@@ -204,21 +208,22 @@ body .categories {
   justify-content: center;
   border-radius: 8px;
   transform: scale(0.8);
-  transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
-  
+  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-out;
+
 }
 
-.link-img:hover{
-  transform: scale(.9) ;
+.link-img:hover {
+  transform: scale(.9);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 body .box {
   background-color: black;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 
   position: relative;
-  
+
   height: 30vh;
   flex: 1 0 344px;
   opacity: 100%;
@@ -378,11 +383,12 @@ footer {
   margin-top: 10%;
 }
 
-#carouselExample{
+#carouselExample {
   visibility: hidden;
   position: absolute;
   display: none;
 }
+
 @media (max-width: 1024px) {
   * {
     box-sizing: border-box;
@@ -409,7 +415,7 @@ footer {
 
   .container {
     top: 0;
-    margin: 0 ;
+    margin: 0;
     width: 100%;
     padding: 0;
     z-index: 1;
@@ -602,13 +608,14 @@ footer {
     flex-wrap: wrap;
     gap: 64px;
   }
-  .address-links{
-    
-  }
-  .contact{
+
+  .address-links {}
+
+  .contact {
     margin: 0 auto;
     width: 100%;
   }
+
   .gmap_canvas {
     overflow: hidden;
     position: relative;
@@ -623,19 +630,23 @@ footer {
     width: 61vw;
     height: 30vh;
   }
+
   .carousel {
     margin: 0 5%;
   }
+
   .logo-main {
     content: url("img/Pearl-Oasis-logo.png");
   }
-  h6{
+
+  h6 {
     font-size: 16px;
   }
-  #carouselExample{
+
+  #carouselExample {
     visibility: visible;
     position: relative;
     display: block;
   }
-  
+
 }
