@@ -90,7 +90,7 @@ require "../includes/getData.php"; ?>
                                         <div class="card-body">
                                             <h5 class="card-title"><?php echo $product_name; ?></h5>
                                             <p class="card-text"><?php echo $description; ?></p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            
                                         </div>
                                         <div class="additional-content">
                                             <p>This premium-quality product is crafted with exceptional materials. Available now
