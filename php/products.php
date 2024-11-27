@@ -67,7 +67,10 @@ require "../includes/getData.php"; ?>
                 ?>
 
                 <div style="margin-top: 32px;">
-                    <h3><?php echo ucwords($category[$index]); ?></h3>
+                    <div style="display:flex; justify-content:center;">
+                        <h3><?php echo ucwords($category[$index]); ?></h3>
+
+                    </div>
                     <div id="carouselExampleControls-<?php echo $j; ?>" class="carousel slide" data-bs-ride="carousel">
 
                         <div class="carousel-inner" id="carousel<?php echo $j; ?>">

@@ -433,8 +433,8 @@ footer {
     
   }
   .logo-main2{
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    
     content: url("../img/Pearl-Oasis-logo.png");
   }
 
@@ -676,4 +676,7 @@ footer {
     display: block;
   }
 
+  .address-links{
+    padding: 10%;
+  }
 }
