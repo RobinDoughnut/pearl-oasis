@@ -9,8 +9,8 @@
     box-sizing: border-box;
 }
 
-*{
-    outline: 1px solid red;
+* {
+    /* outline: 1px solid red; */
 }
 
 .element {
@@ -36,13 +36,24 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background: #F8F0E3;
+    background: #FBF6EF;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 header {
+
     margin: 0 0;
     justify-content: center;
+    background-color: #FBF6EF;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+
+
 
     .sidepanel {
         position: absolute;
@@ -59,7 +70,7 @@ header {
         align-items: center;
         height: 10vh;
         min-width: 100%;
-       
+
 
         .logo {
             height: 80%;
@@ -70,7 +81,7 @@ header {
             .logo-main {
                 height: 80%;
                 width: 100%;
-                
+
 
             }
         }
@@ -98,8 +109,8 @@ header {
             }
 
             li a:hover {
-                background-color: #877b68;
-                color: #f8f0e3;
+                background-color: #00263D;
+                color: white;
             }
         }
 
@@ -120,7 +131,15 @@ header {
                 align-items: center;
                 object-fit: cover;
                 justify-content: center;
+
+                border-radius: 8px;
                 transform: scale(0.8);
+                transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-out;
+            }
+
+            .link-img:hover {
+                transform: scale(.9);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
             }
 
             .menu {
@@ -132,27 +151,13 @@ header {
     }
 }
 
-main {
-    .about {
-        margin: 0 20%;
-        display: block;
-        .text{
-            display: flex;
-            justify-content: center;
-        }
 
-        .para{
-            text-align: center;
-        }
-    }
-
-    
-}
 
 .about {
+    margin: 0 20%;
     padding: 30px;
     text-align: center;
-    background-color: #fff;
+    background-color: #FBF6EF;
 }
 
 .about h1 {
@@ -187,16 +192,20 @@ main {
 } */
 .images {
     display: flex;
-    flex-wrap: wrap; /* Ensures the layout adjusts on smaller screens */
+    flex-wrap: wrap;
+    /* Ensures the layout adjusts on smaller screens */
     gap: 20px;
-    justify-content: center; /* Centers the images horizontally */
+    justify-content: center;
+    /* Centers the images horizontally */
     margin: 20px 0;
 }
 
 .store-image {
     text-align: center;
-    flex: 1 1 45%; /* Makes each image container take up 45% of the row, adjusts on smaller screens */
-    max-width: 500px; /* Prevents containers from becoming too large */
+    flex: 1 1 45%;
+    /* Makes each image container take up 45% of the row, adjusts on smaller screens */
+    max-width: 500px;
+    /* Prevents containers from becoming too large */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -210,26 +219,28 @@ main {
 }
 
 .store-img {
-    width: 100%; /* Ensures images fit within their container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    /* Ensures images fit within their container */
+    height: auto;
+    /* Maintains aspect ratio */
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .store-img:hover {
-    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+    transform: scale(1.05);
+    /* Adds a slight zoom effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
 footer {
     position: relative;
-    bottom: 0;
-    left:0;
+
     background: #11415a;
     width: 100vw;
-    height: 20vh;
-    
+    height: 10vh;
+
 }
 
 @media (max-width: 1024px) {
@@ -317,7 +328,16 @@ footer {
                 margin: 0;
 
                 .logo-main {
-                    content: url("img/Pearl Oasis logo.png");
+                    outline: 1px solid red;
+                    position: absolute;
+                    display: none;
+
+                }
+
+                .logo-main2 {
+                    height: 80%;
+                    width: 100%;
+                    content: url("../img/Pearl Oasis logo.png");
                 }
             }
 
@@ -357,7 +377,8 @@ footer {
                     height: 70%;
                     width: 40%;
                     border: 0px;
-                    background-color: transparent;
+                    border-radius: 8px;
+                    background-color: black;
 
                     .hamburger {
                         padding: 0 0;

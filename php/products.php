@@ -36,6 +36,7 @@ require "../includes/getData.php"; ?>
         <div class="container">
             <div class="logo">
                 <img src="../img/Pearl Oasis logo.png" class="logo-main" alt="">
+                <img class="logo-main2" alt="">
             </div>
             <nav class="navbar">
                 <ul>
@@ -58,7 +59,7 @@ require "../includes/getData.php"; ?>
     </header>
     <main>
         <div class="products">
-            <h1>Products</h1>
+            <h1 style="padding: 20px">Products</h1>
             <?php
 
             for ($j = 0; $j < 6; $j++) {
