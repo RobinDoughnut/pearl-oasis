@@ -287,7 +287,12 @@ footer {
     h1 {
         font-size: 32px;
     }
-
+    a {
+        color: white;
+        text-decoration: none;
+        
+    }
+    
     header {
         margin: 0 0;
         justify-content: center;

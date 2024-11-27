@@ -155,18 +155,19 @@ header {
 
 .about {
     margin: 0 20%;
+    margin-bottom: 24px;
     padding: 30px;
     text-align: center;
     background-color: #FBF6EF;
 }
 
 .about h1 {
-    font-size: 2.5rem;
+    
     margin-bottom: 20px;
 }
 
 .about .para {
-    font-size: 1.1rem;
+    font-size: 24px;
     margin-bottom: 30px;
     color: #333;
 }

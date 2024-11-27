@@ -8,3 +8,6 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0px";
 }
 
+document.getElementsByClassName("card").addEventListener("click", function () {
+  window.location.href = "https://facebook.com"; // URL to redirect to
+});

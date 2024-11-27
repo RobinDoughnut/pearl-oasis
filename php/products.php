@@ -59,7 +59,7 @@ require "../includes/getData.php"; ?>
     </header>
     <main>
         <div class="products">
-            <h1 style="padding: 20px">Products</h1>
+            <h1 style="padding: 20px;">Products</h1>
             <?php
 
             for ($j = 0; $j < 6; $j++) {
@@ -83,28 +83,30 @@ require "../includes/getData.php"; ?>
                                 <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
 
 
+                                    <?php $message = "Hi%20there!Can%20you%20please%20check%20the%20pricing%20for%20".$product_name."?"?>
 
-                                    <div class="card">
+                                    <div class="card" onclick="window.location.href='https://wa.me/+8801892411397?text=<?php echo $message?>'" >
                                         <div class="img-wrapper">
                                             <img src="<?php echo $img ?>" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title"><?php echo $product_name; ?></h5>
                                             <p class="card-text"><?php echo $description; ?></p>
-                                            
+
                                         </div>
                                         <div class="additional-content">
                                             <p>This premium-quality product is crafted with exceptional materials. Available now
                                                 in
                                                 multiple sizes and
                                                 colors.</p>
-                                            <a href="https://www.facebook.com/"><button>Pricing</button></a>
+                                            <a href="https://wa.me/+8801892411397?text=<?php echo $message?>"><button>Pricing</button></a>
                                         </div>
                                     </div>
 
 
 
                                 </div>
+
                                 <?php $i = 1;
                             } ?>
 
