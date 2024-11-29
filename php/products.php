@@ -48,8 +48,8 @@ require "../includes/getData.php"; ?>
             </nav>
             <div class="links">
 
-                <a href=""><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
-                <a href=""><img class="link-img" src="../img/Vector.svg" alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector.svg" alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
                 </button>
 
