@@ -26,10 +26,10 @@ require "../includes/getData.php"; ?>
     <header>
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../html/index.html">Home</a>
-            <a href="../html/products.html">Products</a>
-            <a href="../html/index.html#category">Categories</a>
-            <a href="../html/about_us.html">About Us</a>
+            <a href="index.php">Home</a>
+            <a href="products.php">Products</a>
+            <a href="index.php#category">Categories</a>
+            <a href="about.php">About Us</a>
         </div>
 
 
@@ -40,10 +40,10 @@ require "../includes/getData.php"; ?>
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a class="link" href="../html/index.html">Home</a></li>
-                    <li><a class="link" href="../html/products.html">Products</a></li>
-                    <li><a class="link" href="../html/index.html#category">Categories</a></li>
-                    <li><a class="link" href="../html/about_us.html">About Us</a></li>
+                <li><a class="link" href="index.php">Home</a></li>
+                    <li><a class="link" href="products.php">Products</a></li>
+                    <li><a class="link" href="index.php#category">Categories</a></li>
+                    <li><a class="link" href="about.php">About Us</a></li>
                 </ul>
             </nav>
             <div class="links">

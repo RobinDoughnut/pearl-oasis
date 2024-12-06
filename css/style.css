@@ -34,10 +34,14 @@ body {
 header {
   margin: 0 0;
   justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+
   background-color: #FBF6EF;
-  top: 0;
-  position: sticky;
-  z-index: 100;
+  top: 0 !important;
+  position: sticky !important;
+  display: block;
+  z-index: 1000;
+  align-items: center;
 }
 
 body {
@@ -75,7 +79,7 @@ li a:hover {
   height: 80%;
   width: 100%;
   content: url("../img/Pearl Oasis logo.png");
-  
+
 
 }
 
@@ -83,7 +87,8 @@ li a:hover {
   display: flex;
 
   list-style: none;
-
+  justify-content: center;
+  align-items: center;
   padding: 0px;
   margin: 0px;
 }
@@ -187,35 +192,46 @@ body .categories {
 }
 
 .links {
-  height: 80%;
-  width: auto;
+  height: 35% !important;
+  width: 8%;
 
   display: flex;
   align-items: center;
-  gap: 32px;
-  justify-content: flex-end;
-}
 
+  justify-content: space-between;
+}
+.link-img {
+
+
+  height: inherit;
+  width: inherit;
+  align-items: center;
+
+
+  border-radius: 8px;
+
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+}
+.links a {
+  height: 100%;
+  width: 50%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .menu {
   visibility: hidden;
   position: absolute;
 }
 
-.link-img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  object-fit: cover;
-  justify-content: center;
-  border-radius: 8px;
-  transform: scale(0.8);
-  transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-out;
 
-}
+
+
 
 .link-img:hover {
-  transform: scale(.9);
+  transform: scale(1.1);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -244,8 +260,9 @@ body .box {
 .box h3 {
   position: absolute;
 
-  margin-top: 50%;
-  margin-left: 50%;
+  top: 50%;
+
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
 }
@@ -419,22 +436,25 @@ footer {
     transform: translate(-50%, -50%);
     color: white;
   }
+
   .logo {
-    
+
     width: 20%;
     height: 80%;
     display: flex;
     align-items: center;
   }
+
   .logo-main {
     outline: 1px solid red;
     position: absolute;
     display: none;
-    
+
   }
-  .logo-main2{
+
+  .logo-main2 {
     height: 100%;
-    
+
     content: url("../img/Pearl-Oasis-logo.png");
   }
 
@@ -480,8 +500,9 @@ footer {
   .box h3 {
     position: absolute;
 
-    margin-top: 5vh;
-    margin-left: 50%;
+    top: 50%;
+
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
   }
@@ -547,7 +568,7 @@ footer {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+
   }
 
   .link-img {
@@ -676,7 +697,7 @@ footer {
     display: block;
   }
 
-  .address-links{
+  .address-links {
     padding: 10%;
   }
 }
