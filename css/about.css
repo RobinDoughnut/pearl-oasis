@@ -118,32 +118,33 @@ header {
         .links {
             height: 35% !important;
             width: 8%;
-          
+
             display: flex;
             align-items: center;
-          
+
             justify-content: space-between;
-         
+
             .link-img {
-          
-          
-            height: inherit;
-            width: inherit;
-            align-items: center;
-          
-          
-            border-radius: 8px;
-          
-            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-          
+
+
+                height: inherit;
+                width: inherit;
+                align-items: center;
+
+
+                border-radius: 8px;
+
+                transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
             }
+
             a {
-            height: 100%;
-            width: 50%;
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                height: 100%;
+                width: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .link-img:hover {
@@ -171,7 +172,7 @@ header {
 }
 
 .about h1 {
-    
+
     margin-bottom: 20px;
 }
 
@@ -263,9 +264,11 @@ footer {
     h1 {
         font-size: 32px;
     }
-    p{
+
+    p {
         font-size: 18px;
     }
+
     header {
         margin: 0 0;
         justify-content: center;
@@ -348,7 +351,7 @@ footer {
 
                 .logo-main2 {
                     height: 100%;
-                    
+
                     content: url("../img/Pearl Oasis logo.png");
                 }
             }
@@ -362,14 +365,10 @@ footer {
 
 
 
-                display: flex;
-                align-items: center;
-                gap: 32px;
-                justify-content: flex-end;
-                height: 60%;
-                width: 120px;
-                margin-right: 0;
 
+
+                height: 100%;
+                width: 4rem;
 
                 .link-img {
                     position: absolute;
@@ -381,22 +380,30 @@ footer {
 
 
                 .menu {
-                    visibility: visible;
                     position: relative;
-
+                    visibility: visible;
                     margin: 0 0;
                     padding: 0 0;
-                    height: 70%;
-                    width: 40%;
+                    height: 100%;
+                    width: 100%;
                     border: 0px;
                     border-radius: 8px;
                     background-color: black;
 
                     .hamburger {
-                        padding: .5rem;
+
+                        padding: 4px;
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
+
+                    }
+
+
+
+                    a {
+                        position: absolute;
+                        display: none;
                     }
 
                 }
@@ -408,7 +415,8 @@ footer {
 
         }
     }
-    .about{
+
+    .about {
         margin: 5%;
     }
 

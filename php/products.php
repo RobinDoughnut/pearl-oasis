@@ -40,7 +40,7 @@ require "../includes/getData.php"; ?>
             </div>
             <nav class="navbar">
                 <ul>
-                <li><a class="link" href="index.php">Home</a></li>
+                    <li><a class="link" href="index.php">Home</a></li>
                     <li><a class="link" href="products.php">Products</a></li>
                     <li><a class="link" href="index.php#category">Categories</a></li>
                     <li><a class="link" href="about.php">About Us</a></li>
@@ -48,8 +48,10 @@ require "../includes/getData.php"; ?>
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector.svg" alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                        alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector.svg"
+                        alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
                 </button>
 
@@ -86,9 +88,10 @@ require "../includes/getData.php"; ?>
                                 <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
 
 
-                                    <?php $message = "Hi%20there!Can%20you%20please%20check%20the%20pricing%20for%20".$product_name."?"?>
+                                    <?php $message = "Hi%20there!Can%20you%20please%20check%20the%20pricing%20for%20" . $product_name . "?" ?>
 
-                                    <div class="card" onclick="window.location.href='https://wa.me/+8801892411397?text=<?php echo $message?>'" >
+                                    <div class="card"
+                                        onclick="window.location.href='https://wa.me/+8801892411397?text=<?php echo $message ?>'">
                                         <div class="img-wrapper">
                                             <img src="<?php echo $img ?>" class="d-block w-100" alt="...">
                                         </div>
@@ -102,7 +105,8 @@ require "../includes/getData.php"; ?>
                                                 in
                                                 multiple sizes and
                                                 colors.</p>
-                                            <a href="https://wa.me/+8801892411397?text=<?php echo $message?>"><button>Pricing</button></a>
+                                            <a
+                                                href="https://wa.me/+8801892411397?text=<?php echo $message ?>"><button>Pricing</button></a>
                                         </div>
                                     </div>
 

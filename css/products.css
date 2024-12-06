@@ -22,30 +22,40 @@ h1 {
     font-size: 64px;
 }
 
-h3{
+h3 {
     text-align: center;
-    
-    position: relative; /* Enables positioning for pseudo-elements */
+
+    position: relative;
+    /* Enables positioning for pseudo-elements */
     display: inline-block;
 }
+
 h3::before,
 h3::after {
     text-align: center;
-    content: ""; /* Creates a decorative element */
+    content: "";
+    /* Creates a decorative element */
     position: absolute;
-    top: 50%; /* Align with the middle of the title */
-    width: 100px; /* Length of the line */
-    height: 1px; /* Thickness of the line */
-    background-color: #000; /* Line color */
+    top: 50%;
+    /* Align with the middle of the title */
+    width: 100px;
+    /* Length of the line */
+    height: 1px;
+    /* Thickness of the line */
+    background-color: #000;
+    /* Line color */
 }
 
 h3::before {
-    left: -110px; /* Position to the left */
+    left: -110px;
+    /* Position to the left */
 }
 
 h3::after {
-    right: -110px; /* Position to the right */
+    right: -110px;
+    /* Position to the right */
 }
+
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -142,42 +152,44 @@ header {
         .links {
             height: 35% !important;
             width: 8%;
-          
+
             display: flex;
             align-items: center;
-          
+
             justify-content: space-between;
-         
+
             .link-img {
-          
-          
-            height: inherit;
-            width: inherit;
-            align-items: center;
-          
-          
-            border-radius: 8px;
-          
-            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-          
+
+
+                height: inherit;
+                width: inherit;
+                align-items: center;
+
+
+                border-radius: 8px;
+
+                transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
             }
+
             a {
-            height: 100%;
-            width: 50%;
-            
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                height: 100%;
+                width: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .link-img:hover {
                 transform: scale(1.1);
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
             }
+
             .menu {
                 visibility: hidden;
                 position: absolute;
-            
+
             }
         }
 
@@ -315,13 +327,13 @@ footer {
     h1 {
         font-size: 32px;
     }
-   
+
     a {
         color: white;
         text-decoration: none;
-        
+
     }
-    
+
     header {
         margin: 0 0;
         justify-content: center;
@@ -404,13 +416,13 @@ footer {
 
                 .logo-main2 {
                     height: 100%;
-                    
+
                     content: url("../img/Pearl Oasis logo.png");
                 }
 
 
-               
-                
+
+
             }
 
             .navbar {
@@ -422,14 +434,10 @@ footer {
 
 
 
-                display: flex;
-                align-items: center;
-                gap: 32px;
-                justify-content: flex-end;
-                height: 60%;
-                width: 120px;
-                margin-right: 0;
 
+
+                height: 100%;
+                width: 4rem;
 
                 .link-img {
                     position: absolute;
@@ -441,24 +449,30 @@ footer {
 
 
                 .menu {
-                    visibility: visible;
                     position: relative;
-
+                    visibility: visible;
                     margin: 0 0;
                     padding: 0 0;
-                    height: 70%;
-                    width: 40%;
+                    height: 100%;
+                    width: 100%;
                     border: 0px;
                     border-radius: 8px;
                     background-color: black;
 
                     .hamburger {
-                        
-                            padding: .5rem;
-                                height: 100%;
-                                width: 100%;
-                                object-fit: cover;
-                            
+
+                        padding: 4px;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+
+                    }
+
+
+
+                    a {
+                        position: absolute;
+                        display: none;
                     }
 
                 }
@@ -476,7 +490,8 @@ footer {
         .products {
             margin: 0 0;
         }
-        .additional-content{
+
+        .additional-content {
             display: none;
         }
 
@@ -506,9 +521,11 @@ footer {
         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
         border: none;
     }
-    .carousel-control-next, .carousel-control-prev{
+
+    .carousel-control-next,
+    .carousel-control-prev {
         display: none;
     }
 
-    
+
 }

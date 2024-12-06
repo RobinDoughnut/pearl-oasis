@@ -43,8 +43,10 @@
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg" alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                        alt=""></a>
+                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg"
+                        alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
                 </button>
 

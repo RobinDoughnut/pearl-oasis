@@ -200,6 +200,7 @@ body .categories {
 
   justify-content: space-between;
 }
+
 .link-img {
 
 
@@ -213,14 +214,16 @@ body .categories {
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 
 }
+
 .links a {
   height: 100%;
   width: 50%;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .menu {
   visibility: hidden;
   position: absolute;
@@ -545,30 +548,37 @@ footer {
     height: 100px;
   }
 
-  .links {
-    height: 60%;
-    width: 120px;
-    margin-right: 0;
-  }
+
 
   .menu {
     position: relative;
     visibility: visible;
     margin: 0 0;
     padding: 0 0;
-    height: 70%;
-    width: 40%;
+    height: 100%;
+    width: 100%;
     border: 0px;
     border-radius: 8px;
     background-color: black;
   }
 
   .hamburger {
-    padding: 0 0;
+
+    padding: 4px;
     height: 100%;
     width: 100%;
     object-fit: cover;
 
+  }
+
+  .links {
+    height: 100%;
+    width: 2rem;
+  }
+
+  .links a {
+    position: absolute;
+    display: none;
   }
 
   .link-img {

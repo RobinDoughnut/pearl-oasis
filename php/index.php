@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/main.js"></script>
 </head>
@@ -42,8 +43,10 @@
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg" alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg" alt=""></a>
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                        alt=""></a>
+                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg"
+                        alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-Menu.svg" alt="">
                 </button>
 
@@ -60,7 +63,7 @@
 
             <img class="landing-img" src="../img/rectangle-4.png" alt="">
         </div>
-        <div id= "category" class="categories">
+        <div id="category" class="categories">
             <div class="text">
                 <h1>Categories</h1>
             </div>
@@ -117,7 +120,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../img/image.jpg" class="d-block w-100" alt="...">
-                        
+
                     </div>
                     <div class="carousel-item">
                         <img src="../img/image.jpg" class="d-block w-100" alt="...">
@@ -162,15 +165,18 @@
 
             <div class="address">
                 <div class="mapouter">
-                    <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=Navana%20Tower%20Shop%2015%2016%2017%203rd%20floor%20Gulshan-1%201212%20Dhaka%20Dhaka%20Division%20Bangladesh&output=embed"
-                        frameborder="0" scrolling="no" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+                    <div class="gmap_canvas"><iframe
+                            src="https://maps.google.com/maps?q=Navana%20Tower%20Shop%2015%2016%2017%203rd%20floor%20Gulshan-1%201212%20Dhaka%20Dhaka%20Division%20Bangladesh&output=embed"
+                            frameborder="0" scrolling="no" width="600" height="450" style="border:0;" allowfullscreen=""
+                            loading="lazy"> </iframe>
                     </div>
                 </div>
                 <div class="address-links">
                     <h2>Find Us Here</h2>
                     <div style="display: flex; gap: 8px;">
                         <img style="height: 24px;" src="../img/basil_location-outline.svg" alt="">
-                        <h5>Navana Tower: Shop 15, 16 & 17 (3rd floor), Gulshan-1 1212 Dhaka, Dhaka Division, Bangladesh</h5>
+                        <h5>Navana Tower: Shop 15, 16 & 17 (3rd floor), Gulshan-1 1212 Dhaka, Dhaka Division, Bangladesh
+                        </h5>
 
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
