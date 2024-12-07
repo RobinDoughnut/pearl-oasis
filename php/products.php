@@ -1,6 +1,7 @@
 <?php
 $index = 0;
-require "../includes/getData.php"; ?>
+require "../includes/getData.php";
+require  "../includes/session.security.php"?>
 
 <!DOCTYPE html>
 <html>

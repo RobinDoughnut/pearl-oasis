@@ -1,3 +1,5 @@
+
+<?php require "../includes/session.security.php"?>
 <!DOCTYPE html>
 <html>
 
