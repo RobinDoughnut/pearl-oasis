@@ -1,5 +1,7 @@
 
-<?php require "../includes/session.security.php"?>
+<?php require "../includes/session.security.php"
+    //   require "../includes/getData.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -7,6 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -73,17 +76,25 @@
             <div class="category-grid">
 
                 <div class="box">
-                    <h3> category</h3>
+                    <a href="products.php#ring" class="box">
+                    <h3> Ring</h3>
                     <img class="category-img" src="../img/n-2.jpg" alt="">
+                    </a>
+                    
                 </div>
                 <div class="box">
 
-                    <h3> category</h3>
+                    <a href="products.php#earring" class="box">
+                    <h3> Earring</h3>
                     <img class="category-img" src="../img/n-3.jpg" alt="">
+                    </a>
                 </div>
                 <div class="box">
-                    <h3> category</h3>
+                    
+                    <a href="products.php?id=necklace " class="box">
+                    <h3> Necklace</h3>
                     <img class="category-img" src="../img/n-4.jpg" alt="">
+                    </a>
 
                 </div>
                 <div class="box">
@@ -107,6 +118,10 @@
 
 
 
+
+
+
+            </div>
 
 
 

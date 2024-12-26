@@ -13,7 +13,35 @@
   /* outline: 1px solid red; */
   /* Helps you visualize the boundaries of each element */
 }
+.box {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
 
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* .box::after {
+    content: "View";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+} */
+
+.box:hover::after {
+    opacity: 1;
+}
 html,
 body {
   overflow-x: hidden;
