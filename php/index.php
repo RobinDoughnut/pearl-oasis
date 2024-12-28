@@ -98,19 +98,22 @@
 
                 </div>
                 <div class="box">
-
-                    <h3> category</h3>
-                    <img class="category-img" src="../img/n-5.jpg" alt="">
+                    <a href="products.php#pendant" class="box">
+                        <h3> Pendant</h3>
+                        <img class="category-img" src="../img/n-5.jpg" alt="">
+                    </a>
                 </div>
                 <div class="box">
-                    <h3> category</h3>
+                <a href="products.php#bracelet" class="box">
+                    <h3> Bracelet</h3>
                     <img class="category-img" src="../img/n-6.jpg" alt="">
-
+                </a>
                 </div>
                 <div class="box">
-                    <h3> category</h3>
+                <a href="products.php#pearl" class="box">
+                    <h3>Pearl</h3>
                     <img class="category-img" src="../img/n-7.jpg" alt="">
-
+                </a>
                 </div>
 
 
