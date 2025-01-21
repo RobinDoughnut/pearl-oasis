@@ -71,7 +71,7 @@ require  "../includes/session.security.php"?>
 
                 <div style="margin-top: 32px;">
                     <div style="display:flex; justify-content:center;">
-                        <h3><?php echo ucwords($category[$index]); ?></h3>
+                        <h3 id = "<?php $category[$index] ?>"><?php echo ucwords($category[$index]); ?></h3>
 
                     </div>
                     <div id="carouselExampleControls-<?php echo $j; ?>" class="carousel slide" data-bs-ride="carousel">
