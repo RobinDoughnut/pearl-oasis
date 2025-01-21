@@ -39,9 +39,7 @@
     border-radius: 5px;
 } */
 
-.box:hover::after {
-    opacity: 1;
-}
+
 html,
 body {
   overflow-x: hidden;
@@ -80,6 +78,9 @@ body {
 h1 {
   font-size: 64px;
   font-weight: 100;
+}
+h3{
+  opacity: 1;
 }
 
 div {}
@@ -125,6 +126,7 @@ a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1vw;
+  opacity: 1;
 }
 
 .navbar {
@@ -275,7 +277,7 @@ body .box {
 
   height: 30vh;
   flex: 1 0 344px;
-  opacity: 100%;
+  opacity: 1;
   color: white;
   overflow: hidden;
 }
@@ -284,7 +286,7 @@ body .box {
   height: 100%;
   width: 100%;
 
-  opacity: 0.4;
+  opacity: .4;
   object-fit: cover;
 }
 
@@ -296,6 +298,7 @@ body .box {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+  z-index: 50;
 }
 
 .address-links a {
@@ -523,7 +526,7 @@ footer {
 
   body .box {
     border-radius: 8px;
-
+    opacity: 1;
     height: 10vh;
     flex: 1 0 191px;
   }
@@ -542,6 +545,7 @@ footer {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    opacity: .4;
   }
 
   body .category-grid {
