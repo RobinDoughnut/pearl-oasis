@@ -1,6 +1,6 @@
 
-<?php require "../includes/session.security.php"
-    //   require "../includes/getData.php";
+<?php require "includes/session.security.php"
+    //   require "includes/getData.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -48,11 +48,11 @@
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector-1.svg"
                         alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg"
+                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="img/Vector.svg"
                         alt=""></a>
-                <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-Menu.svg" alt="">
+                <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-Menu.svg" alt="">
                 </button>
 
             </div>
@@ -66,7 +66,7 @@
                 <p></p>
             </div> -->
 
-            <!-- <img class="landing-img" src="../img/rectangle-4.png" alt=""> -->
+            <!-- <img class="landing-img" src="img/rectangle-4.png" alt=""> -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,13 +75,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/rectangle-4.png" class="d-block w-100" alt="...">
+                <img src="img/rectangle-4.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/r1.png" class="d-block w-100" alt="...">
+                <img src="img/r1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="../img/r2.png" class="d-block w-100" alt="...">
+                <img src="img/r2.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -106,7 +106,7 @@
                     <h3> Ring</h3>
                     <div>
 
-                        <img class="category-img" src="../img/n-2.jpg" alt="">
+                        <img class="category-img" src="img/n-2.jpg" alt="">
                     </div>
                     </a>
                     
@@ -115,7 +115,7 @@
 
                     <a href="products.php#earring" class="box">
                     <h3> Earring</h3>
-                    <img class="category-img" src="../img/n-3.jpg" alt="">
+                    <img class="category-img" src="img/n-3.jpg" alt="">
                     </a>
                 </div>
                 <div class="box">
@@ -123,7 +123,7 @@
                     <a href="products.php#necklace " class="box">
                     <h3> Necklace</h3>
                     
-                    <img class="category-img" src="../img/n-4.jpg" alt="">
+                    <img class="category-img" src="img/n-4.jpg" alt="">
                     
                     </a>
 
@@ -132,20 +132,20 @@
 
                     <a href="products.php#pendant" class="box">
                         <h3> Pendant</h3>
-                        <img class="category-img" src="../img/n-3.jpg" alt="">
+                        <img class="category-img" src="img/n-3.jpg" alt="">
                     </a>
                 </div>
                 <div class="box">
                 <a href="products.php#bracelet" class="box">
                     <h3> Bracelet</h3>
-                    <img class="category-img" src="../img/n-3.jpg" alt="">
+                    <img class="category-img" src="img/n-3.jpg" alt="">
                 </a>
 
                 </div>
                 <div class="box">
                 <a href="products.php#pearl" class="box">
                     <h3> Pearl</h3>
-                    <img class="category-img" src="../img/n-3.jpg" alt="">
+                    <img class="category-img" src="img/n-3.jpg" alt="">
                 </a>
 
                 </div>
@@ -173,14 +173,14 @@
             <div id="carouselExample" class="carousel slide carousel-custom-size" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/image.jpg" class="d-block w-100" alt="...">
 
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/image.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/image.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -195,17 +195,17 @@
                 </button>
             </div>
             <div class="gallery">
-                <img src="../img/n-2.jpg" class="featured-1">
+                <img src="img/n-2.jpg" class="featured-1">
 
-                <img src="../img/n-2.jpg" class="featured-2">
+                <img src="img/n-2.jpg" class="featured-2">
 
-                <img src="../img/n-2.jpg" class="featured-3">
+                <img src="img/n-2.jpg" class="featured-3">
 
-                <img src="../img/n-2.jpg" class="featured-4">
+                <img src="img/n-2.jpg" class="featured-4">
 
-                <img src="../img/n-2.jpg" class="featured-5">
+                <img src="img/n-2.jpg" class="featured-5">
 
-                <img src="../img/n-2.jpg" class="featured-6">
+                <img src="img/n-2.jpg" class="featured-6">
 
 
             </div>
@@ -228,13 +228,13 @@
                 <div class="address-links">
                     <h2>Find Us Here</h2>
                     <div style="display: flex; gap: 8px;">
-                        <img style="height: 24px;" src="../img/basil_location-outline.svg" alt="">
+                        <img style="height: 24px;" src="img/basil_location-outline.svg" alt="">
                         <h5>Navana Tower: Shop 15, 16 & 17 (3rd floor), Gulshan-1 1212 Dhaka, Dhaka Division, Bangladesh
                         </h5>
 
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
-                        <img style="height: 18px;" src="../img/cib_facebook-f.svg" alt="">
+                        <img style="height: 18px;" src="img/cib_facebook-f.svg" alt="">
                         <a style="font-size: 18px;" href="#">www.facebook.com/pearl</a>
                     </div>
                 </div>

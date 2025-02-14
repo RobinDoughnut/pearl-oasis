@@ -1,7 +1,7 @@
 <?php
 $index = 0;
-require "../includes/getData.php";
-require  "../includes/session.security.php"?>
+require "includes/getData.php";
+require  "includes/session.security.php"?>
 
 <!DOCTYPE html>
 <html>
@@ -18,9 +18,9 @@ require  "../includes/session.security.php"?>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="css/products.css" />
     <script src="jquery-3.7.1.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@ require  "../includes/session.security.php"?>
 
         <div class="container">
             <div class="logo">
-                <img src="../img/Pearl Oasis logo.png" class="logo-main" alt="">
+                <img src="img/Pearl Oasis logo.png" class="logo-main" alt="">
                 <img class="logo-main2" alt="">
             </div>
             <nav class="navbar">
@@ -49,11 +49,11 @@ require  "../includes/session.security.php"?>
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector-1.svg"
                         alt=""></a>
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector.svg"
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector.svg"
                         alt=""></a>
-                <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
+                <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-menu.png" alt="">
                 </button>
 
             </div>
@@ -136,7 +136,7 @@ require  "../includes/session.security.php"?>
                 </div>
                 <?php
                 $index++;
-                require "../includes/getData.php";
+                require "includes/getData.php";
                 $i = 1;
             } ?>
         </div>
@@ -150,7 +150,7 @@ require  "../includes/session.security.php"?>
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
 
-        <script src="../js/carousel.js"></script>
+        <script src="js/carousel.js"></script>
 
 
     </body>

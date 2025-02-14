@@ -1,4 +1,4 @@
-<?php require  "../includes/session.security.php" ?>
+<?php require  "includes/session.security.php" ?>
 
 <!DOCTYPE html>
 <html>
@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/about.css" />
-    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 
         <div class="container">
             <div class="logo">
-                <img class="logo-main" src="../img/Pearl Oasis logo.png" alt="">
+                <img class="logo-main" src="img/Pearl Oasis logo.png" alt="">
                 <img class="logo-main2" alt="">
             </div>
             <nav class="navbar">
@@ -45,11 +45,11 @@
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="../img/Vector-1.svg"
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector-1.svg"
                         alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="../img/Vector.svg"
+                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="img/Vector.svg"
                         alt=""></a>
-                <button class="menu" onclick="sidepane()"><img class="hamburger" src="../img/Hamburger-menu.png" alt="">
+                <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-menu.png" alt="">
                 </button>
 
             </div>
@@ -79,11 +79,11 @@
             <div class="images">
                 <div class="store-image">
                     <h3>Our First Store: Bashundhara City Complex</h3>
-                    <img src="../img/n-4.jpg" alt="Bashundhara Store" class="store-img">
+                    <img src="img/n-4.jpg" alt="Bashundhara Store" class="store-img">
                 </div>
                 <div class="store-image">
                     <h3>Our Expansion: Navana Tower</h3>
-                    <img src="../img/n-2.jpg" alt="Navana Store" class="store-img">
+                    <img src="img/n-2.jpg" alt="Navana Store" class="store-img">
                 </div>
             </div>
         </div>
