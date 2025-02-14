@@ -25,8 +25,8 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.php">Home</a>
             <a href="products.php">Products</a>
-            <a href="index.php#category">Categories</a>
-            <a href="about.php">About Us</a>
+            <!-- <a href="index.php#category">Categories</a> -->
+            <a href="about.php">Contact Us</a>
         </div>
 
 
@@ -39,8 +39,8 @@
                 <ul>
                     <li><a class="link" href="index.php">Home</a></li>
                     <li><a class="link" href="products.php">Products</a></li>
-                    <li><a class="link" href="index.php#category">Categories</a></li>
-                    <li><a class="link" href="about.php">About Us</a></li>
+                    <!-- <li><a class="link" href="index.php#category">Categories</a></li> -->
+                    <li><a class="link" href="about.php">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="links">
@@ -88,7 +88,35 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>
