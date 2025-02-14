@@ -28,22 +28,22 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.php">Home</a>
             <a href="products.php">Products</a>
-            <a href="index.php#category">Categories</a>
-            <a href="about.php">About Us</a>
+            <!-- <a href="index.php#category">Categories</a> -->
+            <a href="about.php">Contact Us</a>
         </div>
 
 
         <div class="container">
             <div class="logo">
                 <img class="logo-main" alt="">
-                <img class="logo-main2" alt="">
+                <!-- <img class="logo-main2" alt=""> -->
             </div>
             <nav class="navbar">
                 <ul>
                     <li><a class="link" href="index.php">Home</a></li>
                     <li><a class="link" href="products.php">Products</a></li>
-                    <li><a class="link" href="index.php#category">Categories</a></li>
-                    <li><a class="link" href="about.php">About Us</a></li>
+                    <!-- <li><a class="link" href="index.php#category">Categories</a></li> -->
+                    <li><a class="link" href="about.php">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="links">
@@ -61,12 +61,38 @@
     </header>
     <main>
         <div class="hero-section">
-            <div class="landing-text">
+            <!-- <div class="landing-text">
                 <h1 class="tagline">JEWELRY BROS</h1>
                 <p></p>
-            </div>
+            </div> -->
 
-            <img class="landing-img" src="../img/rectangle-4.png" alt="">
+            <!-- <img class="landing-img" src="../img/rectangle-4.png" alt=""> -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/rectangle-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/r1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/r2.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
         </div>
         <div id="category" class="categories">
             <div class="text">

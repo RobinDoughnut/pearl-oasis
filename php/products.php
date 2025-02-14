@@ -29,8 +29,8 @@ require  "../includes/session.security.php"?>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.php">Home</a>
             <a href="products.php">Products</a>
-            <a href="index.php#category">Categories</a>
-            <a href="about.php">About Us</a>
+            <!-- <a href="index.php#category">Categories</a> -->
+            <a href="about.php">Contact Us</a>
         </div>
 
 
@@ -43,8 +43,8 @@ require  "../includes/session.security.php"?>
                 <ul>
                     <li><a class="link" href="index.php">Home</a></li>
                     <li><a class="link" href="products.php">Products</a></li>
-                    <li><a class="link" href="index.php#category">Categories</a></li>
-                    <li><a class="link" href="about.php">About Us</a></li>
+                    <!-- <li><a class="link" href="index.php#category">Categories</a></li> -->
+                    <li><a class="link" href="about.php">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="links">
