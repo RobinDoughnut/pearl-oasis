@@ -215,7 +215,7 @@ body .text {
 }
 
 body .categories {
-  display: relative;
+  display:flex;
   margin: 0 auto;
   height: inherit;
   width: 61%;

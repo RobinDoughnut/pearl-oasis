@@ -2,7 +2,7 @@
 
 $dsn = "mysql:host=localhost;dbname=pearl_oasis";
 $dbusername = "root";
-$dbpassword = "";
+$dbpassword = "root";
 
 try{
     $pdo = new PDO($dsn,$dbusername, $dbpassword) ;
