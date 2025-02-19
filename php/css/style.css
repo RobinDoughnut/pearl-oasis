@@ -282,7 +282,10 @@ body .categories {
 }
 
 
-
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    display: none;
+}
 
 
 .link-img:hover {
