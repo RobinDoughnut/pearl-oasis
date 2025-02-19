@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <script src="js/main.js"></script>
 </head>
 
@@ -27,6 +28,7 @@
             <a href="products.php">Products</a>
             <!-- <a href="index.php#category">Categories</a> -->
             <a href="about.php">Contact Us</a>
+
         </div>
 
 
@@ -58,65 +60,51 @@
     </header>
     <main>
         <div class="about">
-            <div class="text">
-                <h1>About Us</h1>
+            
+        <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" 
+                       name="name" 
+                       placeholder="Your Name" required>
+                <span class="error-message" id="nameError"></span>
             </div>
-            <div class="para">
-                <p>
-                    Welcome to <strong>Pearl Oasis</strong>, where timeless elegance meets exquisite craftsmanship.
-                    Since 2001, we’ve been dedicated to <em>“Crafting memories through Jewellery.”</em>
-                </p>
-                <p>
-                    Our journey began in Bashundhara City Complex, where our first store brought unique,
-                    high-quality jewelry to our customers. With passion and dedication, we expanded to
-                    Navana Tower, ensuring we’re always here to help you celebrate life’s precious moments.
-                </p>
-                <p>
-                    Explore our collection of timeless pearls, dazzling diamonds, and custom designs crafted
-                    with love and care. Each piece tells a story—your story.
-                </p>
+            <div class="form-group">
+            <input type="hidden" name="access_key" value="cc171ee3-ff6d-4607-b89a-f60c5d040d72">
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                       name="email" 
+                       placeholder="Your Email" required>
+                <span class="error-message" id="emailError"></span>
             </div>
-            <div class="images">
-                <div class="store-image">
-                    <h3>Our First Store: Bashundhara City Complex</h3>
-                    <img src="img/n-4.jpg" alt="Bashundhara Store" class="store-img">
-                </div>
-                <div class="store-image">
-                    <h3>Our Expansion: Navana Tower</h3>
-                    <img src="img/n-2.jpg" alt="Navana Store" class="store-img">
-                </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" 
+                       name="phone" 
+                       placeholder="Your Phone Number" required>
+                <span class="error-message" id="phoneError"></span>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" 
+                          name="message" 
+                          placeholder="Your Message" 
+                          rows="5" required></textarea>
+                <span class="error-message" 
+                      id="messageError"></span>
+            </div>
+            <button type="submit" 
+                    class="submit-button">
+              Send Message
+            </button>
+        </form>
+    </div>
+            
+    </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Online shop</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow us</h4>
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
     </footer>
 </body>
