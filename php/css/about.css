@@ -169,8 +169,12 @@ header {
 
 .about {
     margin: 0 20%;
+    min-height: 80vh;
+    padding-top: 10vh;
+    
+    
     margin-bottom: 24px;
-    padding: 30px;
+    
     text-align: center;
     background-color: #FBF6EF;
 }
@@ -250,13 +254,51 @@ header {
 
 
 footer {
-    position: relative;
-
     background: #11415a;
     width: 100vw;
     height: 10vh;
-
-}
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  footer .footer-content .email-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .footer-content .email-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  footer .footer-content .email-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  footer .footer-content .email-form button:hover {
+    background-color: #0056b3;
+  }
+  
 
 @media (max-width: 1024px) {
     * {

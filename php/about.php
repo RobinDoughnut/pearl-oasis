@@ -59,7 +59,7 @@
 
     </header>
     <main>
-        <div class="about">
+    <div class="about">
             
         <div class="contact-form-container">
         <h2>Contact Us</h2>
@@ -100,13 +100,22 @@
               Send Message
             </button>
         </form>
-    </div>
+        </div>
             
     </div>
     </main>
     <footer class="footer">
-
-    </footer>
+    <div class="footer-content">
+        <div>
+            whatsapp
+        </div>
+        <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
+        <div class="email-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+</footer>
 </body>
 
 

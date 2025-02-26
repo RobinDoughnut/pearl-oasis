@@ -142,8 +142,17 @@ require  "includes/session.security.php"?>
         </div>
     </main>
 
-    <footer>
-        <!-- Footer content -->
+    <footer class="footer">
+    <div class="footer-content">
+        <div>
+            whatsapp
+        </div>
+        <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
+        <div class="email-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
     </footer>
 
     <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

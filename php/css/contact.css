@@ -9,48 +9,58 @@
     align-items: center;
     height: 100vh;
 } */
-body div{
+/* body div{
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
+} */
 .contact-form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 600px;
-    width: 100%;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #11415a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
-    
-
 }
 
-h2 {
-    margin-top: 0;
-    color: #333;
+.contact-form-container h2 {
     text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-bottom: 5px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #333;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1rem;
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 textarea {
@@ -59,22 +69,26 @@ textarea {
 
 .error-message {
     color: red;
-    font-size: 0.875rem;
-    display: none; /* Hidden by default */
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .submit-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
+    display: block;
     width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    
+    border-radius: 4px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .submit-button:hover {
-    background-color: #218838;
+    background-color: white;
+    color: #11415a;
 }
