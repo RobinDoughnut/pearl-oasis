@@ -63,7 +63,7 @@
             
         <div class="contact-form-container">
         <h2>Contact Us</h2>
-        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <form name="submit-to-google-sheet">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" 
@@ -117,6 +117,17 @@
     </div>
 </footer>
 </body>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxGm9MF6tGpO3xOQYih9BA8Ka8wAjTlJBmxu2oF4HQnGV6f0LdUgsBJ70paovuM2Zaelg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 
 </html>
