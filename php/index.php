@@ -1,7 +1,6 @@
-
 <?php require "includes/session.security.php"
     //   require "includes/getData.php";
-?>
+    ?>
 <!DOCTYPE html>
 <html>
 
@@ -67,32 +66,37 @@
             </div> -->
 
             <!-- <img class="landing-img" src="img/rectangle-4.png" alt=""> -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" data-bs-interval="1000">
-            <div class="carousel-item active">
-                <img src="img/rectangle-4.png" class="d-block w-100" alt="...">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" data-bs-interval="1000">
+                    <div class="carousel-item active">
+                        <img src="img/rectangle-4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/r1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/r2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item">
-                <img src="img/r1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/r2.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
         </div>
         <div id="category" class="categories">
             <div class="text">
@@ -103,28 +107,28 @@
 
                 <div class="box">
                     <a href="products.php#ring" class="box">
-                    <h3> Ring</h3>
-                    <div>
+                        <h3> Ring</h3>
+                        <div>
 
-                        <img class="category-img" src="img/n-2.jpg" alt="">
-                    </div>
+                            <img class="category-img" src="img/n-2.jpg" alt="">
+                        </div>
                     </a>
-                    
+
                 </div>
                 <div class="box">
 
                     <a href="products.php#earring" class="box">
-                    <h3> Earring</h3>
-                    <img class="category-img" src="img/n-3.jpg" alt="">
+                        <h3> Earring</h3>
+                        <img class="category-img" src="img/n-3.jpg" alt="">
                     </a>
                 </div>
                 <div class="box">
-                    
+
                     <a href="products.php#necklace " class="box">
-                    <h3> Necklace</h3>
-                    
-                    <img class="category-img" src="img/n-4.jpg" alt="">
-                    
+                        <h3> Necklace</h3>
+
+                        <img class="category-img" src="img/n-4.jpg" alt="">
+
                     </a>
 
                 </div>
@@ -136,17 +140,17 @@
                     </a>
                 </div>
                 <div class="box">
-                <a href="products.php#bracelet" class="box">
-                    <h3> Bracelet</h3>
-                    <img class="category-img" src="img/n-3.jpg" alt="">
-                </a>
+                    <a href="products.php#bracelet" class="box">
+                        <h3> Bracelet</h3>
+                        <img class="category-img" src="img/n-3.jpg" alt="">
+                    </a>
 
                 </div>
                 <div class="box">
-                <a href="products.php#pearl" class="box">
-                    <h3> Pearl</h3>
-                    <img class="category-img" src="img/n-3.jpg" alt="">
-                </a>
+                    <a href="products.php#pearl" class="box">
+                        <h3> Pearl</h3>
+                        <img class="category-img" src="img/n-3.jpg" alt="">
+                    </a>
 
                 </div>
 
@@ -162,7 +166,7 @@
 
 
 
-            </div>
+        </div>
         </div>
         </div>
         <div class="featured">
@@ -245,20 +249,61 @@
 
     </main>
     <footer class="footer">
-    <div class="footer-content">
-        <div>
-            whatsapp
-        </div>
-        <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
-        <div class="email-form">
+        <div class="footer-content">
+            <div>
+                whatsapp
+            </div>
+            <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"
+                name="submit-to-google-sheet">
+                <div class="form-group" style="display: none;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" value="DEFAULT">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group email-form">
+                    <input type="hidden" name="access_key" value="cc171ee3-ff6d-4607-b89a-f60c5d040d72">
+                    <label style="display: none;" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <span class="error-message" id="emailError"></span>
+                    <button type="submit" class="submit-button">
+                        Subscribe
+                    </button>
+                </div>
+                <div class="form-group" style="display: none;">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" value="DEFAULT">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="form-group" style="display: none;">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5">DEFAULT</textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+            </form>
+            <!-- <div class="email-form">
             <input type="email" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
+        </div> -->
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGm9MF6tGpO3xOQYih9BA8Ka8wAjTlJBmxu2oF4HQnGV6f0LdUgsBJ70paovuM2Zaelg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 
 </html>
