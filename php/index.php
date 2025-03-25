@@ -148,7 +148,7 @@
                 </div>
                 <div class="box">
                     <a href="products.php#pearl" class="box">
-                        <h3> Pearl</h3>
+                        <h3> Jewelry Set</h3>
                         <img class="category-img" src="img/n-3.jpg" alt="">
                     </a>
 

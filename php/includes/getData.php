@@ -3,7 +3,7 @@
 try
 {
     require_once "dbh.inc.php";
-    $category = ["ring","earring","necklace","pendant","bracelet","pearl"];
+    $category = ["ring","earring","necklace","pendant","bracelet","jewelry set"];
     $query = "SELECT * FROM products WHERE category = :category;";
     $stmt = $pdo->prepare($query);
 
