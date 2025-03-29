@@ -32,12 +32,11 @@ require "includes/session.security.php" ?>
             <!-- <a href="index.php#category">Categories</a> -->
             <a href="about.php">Contact Us</a>
         </div>
-
+            
 
         <div class="container">
             <div class="logo">
-                <img src="img/Pearl Oasis logo.png" class="logo-main" alt="">
-                <img class="logo-main2" alt="">
+                <img class="logo-main" src="img/logo-single.png" alt="">
             </div>
             <nav class="navbar">
                 <ul>

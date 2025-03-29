@@ -35,7 +35,6 @@
         <div class="container">
             <div class="logo">
                 <img class="logo-main" alt="">
-                <!-- <img class="logo-main2" alt=""> -->
             </div>
             <nav class="navbar">
                 <ul>
