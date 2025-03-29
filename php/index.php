@@ -50,6 +50,8 @@
                         alt=""></a>
                 <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="img/Vector.svg"
                         alt=""></a>
+                <a href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="link-img" src="img/ig-logo.svg"
+                        alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-Menu.svg" alt="">
                 </button>
 

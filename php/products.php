@@ -52,6 +52,8 @@ require "includes/session.security.php" ?>
                         alt=""></a>
                 <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector.svg"
                         alt=""></a>
+                <a href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="link-img" src="img/ig-logo.svg"
+                        alt=""></a>
                 <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-menu.png" alt="">
                 </button>
 
