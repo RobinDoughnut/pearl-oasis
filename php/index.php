@@ -254,8 +254,8 @@
         <div>
             <div class= "call-icon">
                 <img src="img/call.svg" alt="">
-            </div>
             <span>+880 1892 411 397</span>
+            </div>
         </div>
             <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
 

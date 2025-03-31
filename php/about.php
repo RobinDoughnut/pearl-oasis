@@ -96,9 +96,12 @@
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <div>
-                whatsapp
+        <div>
+            <div class= "call-icon">
+                <img src="img/call.svg" alt="">
+            <span>+880 1892 411 397</span>
             </div>
+        </div>
             <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
             <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"
                 name="submit-to-google-sheet-2">
