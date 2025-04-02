@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+.call-section {
+  display: flex;
+  align-items: center; /* vertically center icon and text */
+  gap: 8px; /* space between icon and number */
+}
+
+.call-section img {
+  width: 10px;
+  height: 10px;
+}
+
+
 * {
   /* outline: 1px solid red; */
   /* Helps you visualize the boundaries of each element */
