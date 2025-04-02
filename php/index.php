@@ -34,7 +34,7 @@
 
         <div class="container">
             <div class="logo">
-                <img class="logo-main" alt="">
+                <img  class="logo-main" src="img/logo-single.png" alt="">
             </div>
             <nav class="navbar">
                 <ul>
@@ -81,10 +81,10 @@
                         <img src="img/rectangle-4.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/r1.png" class="d-block w-100" alt="...">
+                        <img src="img/ear4.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/r2.png" class="d-block w-100" alt="...">
+                        <img src="img/b1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -111,7 +111,7 @@
                         <h3> Ring</h3>
                         <div>
 
-                            <img class="category-img" src="img/n-2.jpg" alt="">
+                            <img class="category-img" src="img/r4.png" alt="">
                         </div>
                     </a>
 
@@ -120,7 +120,7 @@
 
                     <a href="products.php#earring" class="box">
                         <h3> Earring</h3>
-                        <img class="category-img" src="img/n-3.jpg" alt="">
+                        <img class="category-img" src="img/ear4.png" alt="">
                     </a>
                 </div>
                 <div class="box">
@@ -128,7 +128,7 @@
                     <a href="products.php#necklace " class="box">
                         <h3> Necklace</h3>
 
-                        <img class="category-img" src="img/n-4.jpg" alt="">
+                        <img class="category-img" src="img/neck3.png" alt="">
 
                     </a>
 
@@ -137,20 +137,20 @@
 
                     <a href="products.php#pendant" class="box">
                         <h3> Pendant</h3>
-                        <img class="category-img" src="img/n-3.jpg" alt="">
+                        <img class="category-img" src="img/p1.jpg" alt="">
                     </a>
                 </div>
                 <div class="box">
                     <a href="products.php#bracelet" class="box">
                         <h3> Bracelet</h3>
-                        <img class="category-img" src="img/n-3.jpg" alt="">
+                        <img class="category-img" src="img/b4.jpg" alt="">
                     </a>
 
                 </div>
                 <div class="box">
                     <a href="products.php#pearl" class="box">
                         <h3> Jewelry Set</h3>
-                        <img class="category-img" src="img/n-3.jpg" alt="">
+                        <img class="category-img" src="img/Pearl-HeavySet-Static-1-9-24_1.png" alt="">
                     </a>
 
                 </div>
@@ -178,14 +178,14 @@
             <div id="carouselExample" class="carousel slide carousel-custom-size" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/neck2.png" class="d-block w-100" alt="...">
 
                     </div>
                     <div class="carousel-item">
-                        <img src="img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/neck5.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/image.jpg" class="d-block w-100" alt="...">
+                        <img src="img/ear1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -200,17 +200,17 @@
                 </button>
             </div>
             <div class="gallery">
-                <img src="img/n-2.jpg" class="featured-1">
+                <img src="img/neck2.png" class="featured-1">
 
-                <img src="img/n-2.jpg" class="featured-2">
+                <img src="img/neck5.png" class="featured-2">
 
-                <img src="img/n-2.jpg" class="featured-3">
+                <img src="img/ear1.png" class="featured-3">
 
-                <img src="img/n-2.jpg" class="featured-4">
+                <img src="img/b1.png" class="featured-4">
 
-                <img src="img/n-2.jpg" class="featured-5">
+                <img src="img/r1.png" class="featured-5">
 
-                <img src="img/n-2.jpg" class="featured-6">
+                <img src="img/Pearl-HeavySet-Static-1-9-24_1.png" class="featured-6">
 
 
             </div>
@@ -240,7 +240,7 @@
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
                         <img style="height: 18px;" src="img/cib_facebook-f.svg" alt="">
-                        <a style="font-size: 18px;" href="#">www.facebook.com/pearl</a>
+                        <a style="font-size: 18px;" href="https://www.facebook.com/theoasisjewellers/">Pearl Oasis Dhaka</a>
                     </div>
                 </div>
 
