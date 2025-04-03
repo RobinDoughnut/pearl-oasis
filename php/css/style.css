@@ -122,11 +122,12 @@ li a:hover {
 }
 
 .logo-main {
-  height: 80%;
-  width: 100%;
+  outline: 1px solid red;
+  position: absolute;
+  display: none;
+  
+
   content: url("../img/logo-single.png");
-
-
 }
 
 .navbar ul {
@@ -558,8 +559,11 @@ footer .footer-content .email-form button:hover {
     outline: 1px solid red;
     position: absolute;
     display: none;
+    
 
-  }
+    content: url("../img/logo-single.png");
+}
+
 
   .logo-main2 {
     height: 100%;
@@ -823,4 +827,25 @@ footer .footer-content .email-form button:hover {
   .address-links {
     padding: 10%;
   }
+
+  .footer .footer-content {
+    display: flex;
+    flex-direction: column;;
+  }
+
+  .footer {
+    min-height: 20vh;
+    height: auto;
+
+  }
+
+  .footer .footer-content div {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .footer .footer-content .email-form {
+    margin-bottom: 16px;
+  }
+
 }
