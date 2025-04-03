@@ -34,7 +34,7 @@
 
         <div class="container">
             <div class="logo">
-                <img  class="logo-main" src="img/logo-single.png" alt="">
+                <img class="logo-main" src="img/logo-single.png" alt="">
             </div>
             <nav class="navbar">
                 <ul>
