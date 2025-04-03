@@ -70,16 +70,15 @@ body {
 }
 
 header {
-  margin: 0 0;
-  justify-content: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+    margin: 0 0;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
 
-  background-color: #FBF6EF;
-  top: 0 !important;
-  position: sticky !important;
-  display: block;
-  z-index: 1000;
-  align-items: center;
+    background-color: #FBF6EF;
+    top: 0;
+    position: sticky;
+
+    z-index: 1000;
 }
 
 body {
@@ -114,20 +113,14 @@ li a:hover {
   height: 80%;
   display: flex;
   align-items: center;
-}
 
-.logo a {
-  display: inline-block; /* Ensure the anchor tag is treated as an inline-block element */
-  height: 100%; /* Make the anchor tag take the full height of the .logo container */
-}
 
-.logo-main {
-  outline: 1px solid red;
-  position: absolute;
-  display: none;
-  
+  .logo-main {
+      height: 80%;
+      width: 100%;
+      content: url("../img/logo-single.png");
 
-  content: url("../img/logo-single.png");
+  }
 }
 
 .navbar ul {
@@ -549,19 +542,26 @@ footer .footer-content .email-form button:hover {
 
   .logo {
 
-    width: 20%;
-    height: 80%;
     display: flex;
     align-items: center;
-  }
-
-  .logo-main {
-    outline: 1px solid red;
-    position: absolute;
-    display: none;
-    
+    height: 60%;
+    margin: 0;
 
     content: url("../img/logo-single.png");
+
+    .logo-main {
+        outline: 1px solid red;
+        position: absolute;
+        display: none;
+        
+
+        content: url("../img/logo-single.png");
+    }
+
+
+
+
+
 }
 
 
