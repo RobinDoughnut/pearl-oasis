@@ -476,7 +476,7 @@ footer {
 
 
                 height: 100%;
-                width: 4rem;
+                width: 2rem;
 
                 .link-img {
                     position: absolute;
@@ -485,6 +485,10 @@ footer {
                     width: 0;
                 }
 
+                a {
+                    position: absolute;
+                    display: none;
+                }
 
 
                 .menu {
@@ -509,11 +513,7 @@ footer {
 
 
 
-                    a {
-                        position: absolute;
-                        display: none;
-                    }
-
+ 
                 }
 
                 .menu:hover {
