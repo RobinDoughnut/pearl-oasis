@@ -81,13 +81,13 @@
                 </div>
                 <div class="carousel-inner" data-bs-interval="1000">
                     <div class="carousel-item active">
-                        <img src="img/rectangle-4.png" class="d-block w-100" alt="...">
+                        <img src="img/rectangle-4.png" class="d-block w-100 custom-img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/ear4.png" class="d-block w-100" alt="...">
+                        <img src="img/ear4.png" class="d-block w-100 custom-img" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/b1.png" class="d-block w-100" alt="...">
+                        <img src="img/b1.png" class="d-block w-100 custom-img" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"

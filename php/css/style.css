@@ -59,6 +59,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  /* background: #FBF6EF; */
   background: #FBF6EF;
   /* Ensure full width */
 
@@ -523,6 +524,13 @@ footer .footer-content .email-form button:hover {
     padding: 0;
   }
 
+  .custom-img {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: center;
+  }
+
   h1 {
     font-size: 32px;
   }
@@ -592,6 +600,11 @@ footer .footer-content .email-form button:hover {
     padding: 0 0;
   }
 
+  body .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+  }
+
   body .landing-img {
     height: 100%;
     object-fit: cover;
@@ -631,9 +644,31 @@ footer .footer-content .email-form button:hover {
   }
 
   body .category-grid {
-    margin: 0 5%;
+    /* margin: 0 5%;
+    gap: 16px; */
+
+    display: grid;
+    grid-template-columns: 1fr; /* one box per row */
     gap: 16px;
+    padding: 0 16px;
+
   }
+
+  .category-grid .box {
+    width: 100%;
+    height: 120px; /* Adjust height for rectangle look */
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  }
+
 
   body .featured {
     position: relative;
