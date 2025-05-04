@@ -1,6 +1,9 @@
-<?php require "includes/session.security.php"
-    //   require "includes/getData.php";
-    ?>
+<?php
+require __DIR__ . '/../includes/session.security.php';
+require __DIR__ . '/../config.php';
+$style_path = BASE_PATH."assets/css/style.css";
+$script_path = BASE_PATH."assets/js/main.js";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -18,13 +21,13 @@
     <meta name="description" content="Shop premium gold, silver, and gemstone jewelry. Handmade elegance, crafted in Bangladesh. Custom orders available.">
     <meta name="keywords" content="handmade jewelry, gold rings Bangladesh, gemstone necklace, silver bangles, custom jewelry Dhaka">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="<?php echo $style_path?>" />
+    <script src="<?php echo $script_path?>"></script>
 </head>
 
 <body>
@@ -40,7 +43,7 @@
 
         <div class="container">
             <div class="logo">
-                <img class="logo-main" src="img/logo-single.png" alt="">
+                <img class="logo-main" src="/assets/img/logo-single.png" alt="">
             </div>
             <nav class="navbar">
                 <ul>
@@ -52,13 +55,13 @@
             </nav>
             <div class="links">
 
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="img/Vector-1.svg"
+                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="/assets/img/Vector-1.svg"
                         alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="img/Vector.svg"
+                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="/assets/img/Vector.svg"
                         alt=""></a>
-                <a href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="link-img" src="img/ig-logo.svg"
+                <a href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="link-img" src="/assets/img/ig-logo.svg"
                         alt=""></a>
-                <button class="menu" onclick="sidepane()"><img class="hamburger" src="img/Hamburger-Menu.svg" alt="">
+                <button class="menu" onclick="sidepane()"><img class="hamburger" src="/assets/img/Hamburger-Menu.svg" alt="">
                 </button>
 
             </div>
@@ -72,7 +75,7 @@
                 <p></p>
             </div> -->
 
-            <!-- <img class="landing-img" src="img/rectangle-4.png" alt=""> -->
+            <!-- <img class="landing-img" src="/assets/img/rectangle-4.png" alt=""> -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -84,13 +87,13 @@
                 </div>
                 <div class="carousel-inner" data-bs-interval="1000">
                     <div class="carousel-item active">
-                        <img src="img/jewelry-set.png" class="d-block w-100 custom-img" alt="classic jewelry set">
+                        <img src="/assets/img/jewelry-set.png" class="d-block w-100 custom-img" alt="classic jewelry set">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/elegant-earring.png" class="d-block w-100 custom-img" alt="elegant gold earring">
+                        <img src="/assets/img/elegant-earring.png" class="d-block w-100 custom-img" alt="elegant gold earring">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/bracelet.png" class="d-block w-100 custom-img" alt="gold and diamond bracelet">
+                        <img src="/assets/img/bracelet.png" class="d-block w-100 custom-img" alt="gold and diamond bracelet">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -117,7 +120,7 @@
                         <h3> Ring</h3>
                         <div>
 
-                            <img class="category-img" src="img/r4.png" alt="ring collection">
+                            <img class="category-img" src="/assets/img/r4.png" alt="ring collection">
                         </div>
                     </a>
 
@@ -126,7 +129,7 @@
 
                     <a href="products.php#earring" class="box">
                         <h3> Earring</h3>
-                        <img class="category-img" src="img/elegant-earring.png" alt="earring collection">
+                        <img class="category-img" src="/assets/img/elegant-earring.png" alt="earring collection">
                     </a>
                 </div>
                 <div class="box">
@@ -134,7 +137,7 @@
                     <a href="products.php#necklace " class="box">
                         <h3> Necklace</h3>
 
-                        <img class="category-img" src="img/neck3.png" alt="necklace collection">
+                        <img class="category-img" src="/assets/img/neck3.png" alt="necklace collection">
 
                     </a>
 
@@ -143,20 +146,20 @@
 
                     <a href="products.php#pendant" class="box">
                         <h3> Pendant</h3>
-                        <img class="category-img" src="img/p1.jpg" alt="pendant collection">
+                        <img class="category-img" src="/assets/img/p1.jpg" alt="pendant collection">
                     </a>
                 </div>
                 <div class="box">
                     <a href="products.php#bracelet" class="box">
                         <h3> Bracelet</h3>
-                        <img class="category-img" src="img/b4.jpg" alt="bracelet collection">
+                        <img class="category-img" src="/assets/img/b4.jpg" alt="bracelet collection">
                     </a>
 
                 </div>
                 <div class="box">
                     <a href="products.php#pearl" class="box">
                         <h3> Jewelry Set</h3>
-                        <img class="category-img" src="img/jewelry-set.png" alt="jewelry set collection">
+                        <img class="category-img" src="/assets/img/jewelry-set.png" alt="jewelry set collection">
                     </a>
 
                 </div>
@@ -175,14 +178,14 @@
             <div id="carouselExample" class="carousel slide carousel-custom-size" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/neck2.png" class="d-block w-100" alt="elegant gold and diamond necklace">
+                        <img src="/assets/img/neck2.png" class="d-block w-100" alt="elegant gold and diamond necklace">
 
                     </div>
                     <div class="carousel-item">
-                        <img src="img/neck5.png" class="d-block w-100" alt="gorgeous gold necklace">
+                        <img src="/assets/img/neck5.png" class="d-block w-100" alt="gorgeous gold necklace">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/ear1.png" class="d-block w-100" alt="beautiful gold earring">
+                        <img src="/assets/img/ear1.png" class="d-block w-100" alt="beautiful gold earring">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -197,17 +200,17 @@
                 </button>
             </div>
             <div class="gallery">
-                <img src="img/neck2.png" class="featured-1">
+                <img src="/assets/img/neck2.png" class="featured-1">
 
-                <img src="img/neck5.png" class="featured-2">
+                <img src="/assets/img/neck5.png" class="featured-2">
 
-                <img src="img/ear1.png" class="featured-3">
+                <img src="/assets/img/ear1.png" class="featured-3">
 
-                <img src="img/bracelet.png" class="featured-4">
+                <img src="/assets/img/bracelet.png" class="featured-4">
 
-                <img src="img/r1.png" class="featured-5">
+                <img src="/assets/img/r1.png" class="featured-5">
 
-                <img src="img/diamond-earring-set.png" class="featured-6">
+                <img src="/assets/img/diamond-earring-set.png" class="featured-6">
 
 
             </div>
@@ -230,13 +233,13 @@
                 <div class="address-links">
                     <h2>Find Us Here</h2>
                     <div style="display: flex; gap: 8px;">
-                        <img style="height: 24px;" src="img/basil_location-outline.svg" alt="">
+                        <img style="height: 24px;" src="/assets/img/basil_location-outline.svg" alt="">
                         <h5>Navana Tower: Shop 15, 16 & 17 (3rd floor), Gulshan-1 1212 Dhaka, Dhaka Division, Bangladesh
                         </h5>
 
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
-                        <img style="height: 18px;" src="img/cib_facebook-f.svg" alt="">
+                        <img style="height: 18px;" src="/assets/img/cib_facebook-f.svg" alt="">
                         <a style="font-size: 18px;" href="https://www.facebook.com/theoasisjewellers/">Pearl Oasis Dhaka</a>
                     </div>
                 </div>
@@ -250,7 +253,7 @@
         <div class="footer-content">
         <div>
             <div class= "call-icon">
-                <img src="img/call.svg" alt="">
+                <img src="/assets/img/call.svg" alt="">
             <span>+880 1892 411 397</span>
             </div>
         </div>
