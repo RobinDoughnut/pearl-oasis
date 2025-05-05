@@ -1,8 +1,8 @@
 <?php
 require __DIR__ . '/../includes/session.security.php';
 require __DIR__ . '/../config.php';
-$style_path = BASE_PATH."assets/css/style.css";
-$script_path = BASE_PATH."assets/js/main.js";
+$style_path = BASE_PATH . "assets/css/style.css";
+$script_path = BASE_PATH . "assets/js/main.js";
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,56 +18,22 @@ $script_path = BASE_PATH."assets/js/main.js";
     <title>
         Home | Pearl Oasis
     </title>
-    <meta name="description" content="Shop premium gold, silver, and gemstone jewelry. Handmade elegance, crafted in Bangladesh. Custom orders available.">
-    <meta name="keywords" content="handmade jewelry, gold rings Bangladesh, gemstone necklace, silver bangles, custom jewelry Dhaka">
+    <meta name="description"
+        content="Shop premium gold, silver, and gemstone jewelry. Handmade elegance, crafted in Bangladesh. Custom orders available.">
+    <meta name="keywords"
+        content="handmade jewelry, gold rings Bangladesh, gemstone necklace, silver bangles, custom jewelry Dhaka">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $style_path?>" />
-    <script src="<?php echo $script_path?>"></script>
+    <link rel="stylesheet" href="<?php echo $style_path ?>" />
+    <script src="<?php echo $script_path ?>"></script>
 </head>
 
 <body>
-    <header>
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.php">Home</a>
-            <a href="products.php">Products</a>
-            <!-- <a href="index.php#category">Categories</a> -->
-            <a href="about.php">Contact Us</a>
-        </div>
-
-
-        <div class="container">
-            <div class="logo">
-                <img class="logo-main" src="/assets/img/logo-single.png" alt="">
-            </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="link" href="index.php">Home</a></li>
-                    <li><a class="link" href="products.php">Products</a></li>
-                    <!-- <li><a class="link" href="index.php#category">Categories</a></li> -->
-                    <li><a class="link" href="about.php">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="links">
-
-                <a href="https://www.facebook.com/theoasisjewellers/"><img class="link-img" src="/assets/img/Vector-1.svg"
-                        alt=""></a>
-                <a href="https://wa.me/+8801892411397?text=Hi%20there!"><img class="link-img" src="/assets/img/Vector.svg"
-                        alt=""></a>
-                <a href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="link-img" src="/assets/img/ig-logo.svg"
-                        alt=""></a>
-                <button class="menu" onclick="sidepane()"><img class="hamburger" src="/assets/img/Hamburger-Menu.svg" alt="">
-                </button>
-
-            </div>
-        </div>
-
-    </header>
+    <?php require __DIR__ . '/../includes/header.php' ?>
     <main>
         <div class="hero-section">
             <!-- <div class="landing-text">
@@ -75,7 +41,7 @@ $script_path = BASE_PATH."assets/js/main.js";
                 <p></p>
             </div> -->
 
-            <!-- <img class="landing-img" src="/assets/img/rectangle-4.png" alt=""> -->
+            <!-- <img class="landing-img" src="../assets/img/rectangle-4.png" alt=""> -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -87,13 +53,16 @@ $script_path = BASE_PATH."assets/js/main.js";
                 </div>
                 <div class="carousel-inner" data-bs-interval="1000">
                     <div class="carousel-item active">
-                        <img src="/assets/img/jewelry-set.png" class="d-block w-100 custom-img" alt="classic jewelry set">
+                        <img src="../assets/img/jewelry-set.png" class="d-block w-100 custom-img"
+                            alt="classic jewelry set">
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/elegant-earring.png" class="d-block w-100 custom-img" alt="elegant gold earring">
+                        <img src="../assets/img/elegant-earring.png" class="d-block w-100 custom-img"
+                            alt="elegant gold earring">
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/bracelet.png" class="d-block w-100 custom-img" alt="gold and diamond bracelet">
+                        <img src="../assets/img/bracelet.png" class="d-block w-100 custom-img"
+                            alt="gold and diamond bracelet">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -120,7 +89,7 @@ $script_path = BASE_PATH."assets/js/main.js";
                         <h3> Ring</h3>
                         <div>
 
-                            <img class="category-img" src="/assets/img/r4.png" alt="ring collection">
+                            <img class="category-img" src="../assets/img/r4.png" alt="ring collection">
                         </div>
                     </a>
 
@@ -129,7 +98,7 @@ $script_path = BASE_PATH."assets/js/main.js";
 
                     <a href="products.php#earring" class="box">
                         <h3> Earring</h3>
-                        <img class="category-img" src="/assets/img/elegant-earring.png" alt="earring collection">
+                        <img class="category-img" src="../assets/img/elegant-earring.png" alt="earring collection">
                     </a>
                 </div>
                 <div class="box">
@@ -137,7 +106,7 @@ $script_path = BASE_PATH."assets/js/main.js";
                     <a href="products.php#necklace " class="box">
                         <h3> Necklace</h3>
 
-                        <img class="category-img" src="/assets/img/neck3.png" alt="necklace collection">
+                        <img class="category-img" src="../assets/img/neck3.png" alt="necklace collection">
 
                     </a>
 
@@ -146,20 +115,20 @@ $script_path = BASE_PATH."assets/js/main.js";
 
                     <a href="products.php#pendant" class="box">
                         <h3> Pendant</h3>
-                        <img class="category-img" src="/assets/img/p1.jpg" alt="pendant collection">
+                        <img class="category-img" src="../assets/img/p1.jpg" alt="pendant collection">
                     </a>
                 </div>
                 <div class="box">
                     <a href="products.php#bracelet" class="box">
                         <h3> Bracelet</h3>
-                        <img class="category-img" src="/assets/img/b4.jpg" alt="bracelet collection">
+                        <img class="category-img" src="../assets/img/b4.jpg" alt="bracelet collection">
                     </a>
 
                 </div>
                 <div class="box">
                     <a href="products.php#pearl" class="box">
                         <h3> Jewelry Set</h3>
-                        <img class="category-img" src="/assets/img/jewelry-set.png" alt="jewelry set collection">
+                        <img class="category-img" src="../assets/img/jewelry-set.png" alt="jewelry set collection">
                     </a>
 
                 </div>
@@ -178,14 +147,15 @@ $script_path = BASE_PATH."assets/js/main.js";
             <div id="carouselExample" class="carousel slide carousel-custom-size" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/assets/img/neck2.png" class="d-block w-100" alt="elegant gold and diamond necklace">
+                        <img src="../assets/img/neck2.png" class="d-block w-100"
+                            alt="elegant gold and diamond necklace">
 
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/neck5.png" class="d-block w-100" alt="gorgeous gold necklace">
+                        <img src="../assets/img/neck5.png" class="d-block w-100" alt="gorgeous gold necklace">
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/ear1.png" class="d-block w-100" alt="beautiful gold earring">
+                        <img src="../assets/img/ear1.png" class="d-block w-100" alt="beautiful gold earring">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -200,17 +170,17 @@ $script_path = BASE_PATH."assets/js/main.js";
                 </button>
             </div>
             <div class="gallery">
-                <img src="/assets/img/neck2.png" class="featured-1">
+                <img src="../assets/img/neck2.png" class="featured-1">
 
-                <img src="/assets/img/neck5.png" class="featured-2">
+                <img src="../assets/img/neck5.png" class="featured-2">
 
-                <img src="/assets/img/ear1.png" class="featured-3">
+                <img src="../assets/img/ear1.png" class="featured-3">
 
-                <img src="/assets/img/bracelet.png" class="featured-4">
+                <img src="../assets/img/bracelet.png" class="featured-4">
 
-                <img src="/assets/img/r1.png" class="featured-5">
+                <img src="../assets/img/r1.png" class="featured-5">
 
-                <img src="/assets/img/diamond-earring-set.png" class="featured-6">
+                <img src="../assets/img/diamond-earring-set.png" class="featured-6">
 
 
             </div>
@@ -233,14 +203,15 @@ $script_path = BASE_PATH."assets/js/main.js";
                 <div class="address-links">
                     <h2>Find Us Here</h2>
                     <div style="display: flex; gap: 8px;">
-                        <img style="height: 24px;" src="/assets/img/basil_location-outline.svg" alt="">
+                        <img style="height: 24px;" src="../assets/img/basil_location-outline.svg" alt="">
                         <h5>Navana Tower: Shop 15, 16 & 17 (3rd floor), Gulshan-1 1212 Dhaka, Dhaka Division, Bangladesh
                         </h5>
 
                     </div>
                     <div style="display: flex; gap: 8px; align-items: center;">
-                        <img style="height: 18px;" src="/assets/img/cib_facebook-f.svg" alt="">
-                        <a style="font-size: 18px;" href="https://www.facebook.com/theoasisjewellers/">Pearl Oasis Dhaka</a>
+                        <img style="height: 18px;" src="../assets/img/cib_facebook-f.svg" alt="">
+                        <a style="font-size: 18px;" href="https://www.facebook.com/theoasisjewellers/">Pearl Oasis
+                            Dhaka</a>
                     </div>
                 </div>
 
@@ -249,50 +220,7 @@ $script_path = BASE_PATH."assets/js/main.js";
         </div>
 
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-        <div>
-            <div class= "call-icon">
-                <img src="/assets/img/call.svg" alt="">
-            <span>+880 1892 411 397</span>
-            </div>
-        </div>
-            <p>&copy; 2025 Pearl Oasis. All rights reserved.</p>
-
-            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"
-                name="submit-to-google-sheet">
-                <div class="form-group" style="display: none;">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" value="DEFAULT">
-                    <span class="error-message" id="nameError"></span>
-                </div>
-                <div class="form-group email-form">
-                    <input type="hidden" name="access_key" value="cc171ee3-ff6d-4607-b89a-f60c5d040d72">
-                    <label style="display: none;" for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <span class="error-message" id="emailError"></span>
-                    <button type="submit" class="submit-button">
-                        Subscribe
-                    </button>
-                </div>
-                <div class="form-group" style="display: none;">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" value="DEFAULT">
-                    <span class="error-message" id="phoneError"></span>
-                </div>
-                <div class="form-group" style="display: none;">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5">DEFAULT</textarea>
-                    <span class="error-message" id="messageError"></span>
-                </div>
-
-            </form>
-            <!-- <div class="email-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </div> -->
-        </div>
-    </footer>
+    <?php require __DIR__ . '/../includes/footer.php' ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -300,11 +228,11 @@ $script_path = BASE_PATH."assets/js/main.js";
 
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxGm9MF6tGpO3xOQYih9BA8Ka8wAjTlJBmxu2oF4HQnGV6f0LdUgsBJ70paovuM2Zaelg/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const form_2 = document.forms['submit-to-google-sheet-2']
 
-    form.addEventListener('submit', e => {
+    form_2.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        fetch(scriptURL, { method: 'POST', body: new FormData(form_2) })
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
     })

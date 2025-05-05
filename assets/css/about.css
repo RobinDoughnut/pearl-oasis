@@ -85,7 +85,7 @@ header {
             .logo-main {
                 height: 80%;
                 width: 100%;
-
+                content: url("../img/logo-single.png");
 
             }
         }
