@@ -31,7 +31,7 @@ a {
 header {
     margin: 0 0;
     justify-content: center;
-    background-color: #FBF6EF;
+    background-color: var(--color-background);
     top: 0;
     position: sticky;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
@@ -136,7 +136,7 @@ header .container .links .menu {
     padding-top: 10vh;
     margin-bottom: 24px;
     text-align: center;
-    background-color: #FBF6EF;
+    background-color: var(--color-background);
 }
 
 .about h1 {
@@ -186,50 +186,52 @@ header .container .links .menu {
 }
 
 footer {
-    background: #11415a;
+    background: var(--color-footer-bg);
     width: 100vw;
     height: 10vh;
-    margin-top: 10%;
+    margin-top: var(--spacing-lg);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-footer .footer-content {
+    color: var(--color-white);
+    font-family: var(--font-family-secondary);
+  }
+  
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-}
-
-footer .footer-content .email-form {
+  }
+  
+  footer .footer-content .email-form {
     display: flex;
     align-items: center;
-}
-
-footer .footer-content .email-form input[type="email"] {
-    padding: 10px;
+  }
+  
+  footer .footer-content .email-form input[type="email"] {
+    padding: var(--spacing-sm);
     border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-footer .footer-content .email-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: white;
+    border-radius: var(--border-radius-sm);
+    margin-right: var(--spacing-sm);
+    font-family: var(--font-family-secondary);
+  }
+  
+  footer .footer-content .email-form button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    border-radius: var(--border-radius-sm);
+    color: var(--color-white);
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-}
-
-footer .footer-content .email-form button:hover {
-    background-color: #0056b3;
-}
+    font-family: var(--font-family-secondary);
+  }
+  
+  footer .footer-content .email-form button:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark-blue)
+    /* Ensured consistency with about.css and products.css */
+  }
 
 @media (max-width: 1024px) {
     * {

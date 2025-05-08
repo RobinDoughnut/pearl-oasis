@@ -29,7 +29,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
         rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $product_style_path ?>" />
     <script src="jquery-3.7.1.js"></script>
-    <script src="<?php echo $script_style_path ?>"></script>
+    <script src="<?php echo $script_path ?>"></script>
 
 </head>
 

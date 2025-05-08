@@ -71,7 +71,7 @@ header {
     margin: 0 0;
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
-    background-color: #FBF6EF;
+    background-color: var(--color-background);
     top: 0;
     position: sticky;
     z-index: 1000;
@@ -307,8 +307,8 @@ footer .footer-content .email-form input[type="email"] {
 
 footer .footer-content .email-form button {
     padding: var(--spacing-sm) var(--spacing-md);
-    background-color: var(--color-primary);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
     border-radius: var(--border-radius-sm);
     color: var(--color-white);
     cursor: pointer;
@@ -316,8 +316,11 @@ footer .footer-content .email-form button {
 }
 
 footer .footer-content .email-form button:hover {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-white);
+    color: var(--color-dark-blue)
+        /* Ensured consistency with about.css and products.css */
 }
+
 
 @media (max-width: 1024px) {
     * {

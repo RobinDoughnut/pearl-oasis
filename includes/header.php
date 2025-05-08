@@ -33,7 +33,7 @@
             <a
                 href="https://www.instagram.com/thepearloasisjewellers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
                     class="link-img" src="../assets/img/ig-logo.svg" alt=""></a>
-            <button class="menu" onclick="sidepane()"><img class="hamburger" src="/assets/img/Hamburger-Menu.svg"
+            <button class="menu" onclick="sidepane()"><img class="hamburger" src="../assets/img/Hamburger-Menu.svg"
                     alt="">
             </button>
 
