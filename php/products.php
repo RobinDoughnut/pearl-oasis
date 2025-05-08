@@ -30,6 +30,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
     <link rel="stylesheet" href="<?php echo $product_style_path ?>" />
     <script src="jquery-3.7.1.js"></script>
     <script src="<?php echo $script_style_path ?>"></script>
+
 </head>
 
 <body>
@@ -122,7 +123,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
 
-        <script src="js/carousel.js"></script>
+        <script src="../assets/js/carousel.js"></script>
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxGm9MF6tGpO3xOQYih9BA8Ka8wAjTlJBmxu2oF4HQnGV6f0LdUgsBJ70paovuM2Zaelg/exec'
             const form_2 = document.forms['submit-to-google-sheet-2']

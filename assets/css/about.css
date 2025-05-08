@@ -1,29 +1,26 @@
+@import url('styleguide.css');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Replace values with those from styleguide */
 :root {
-    --spacing: 100vw;
+    --spacing: var(--spacing-md);
     --new: calc(var(--spacing) / 1920);
+    --font-family-primary: 'Outfit', sans-serif;
 }
 
-
-
-* {
+html,
+body {
+    background: var(--color-background);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-normal);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-* {
-    /* outline: 1px solid red; */
-}
-
-.element {
-    margin: 0;
-    padding: 0px;
+    width: 100vw;
 }
 
 h1 {
     font-size: 64px;
 }
-
 
 a {
     color: rgb(0, 0, 0);
@@ -31,156 +28,118 @@ a {
     font-size: 1vw;
 }
 
-html,
-body {
-    overflow-x: hidden;
-
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    background: #FBF6EF;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    
-
-}
-
 header {
-
     margin: 0 0;
     justify-content: center;
     background-color: #FBF6EF;
     top: 0;
     position: sticky;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
-
-
-
-    .sidepanel {
-        position: absolute;
-        visibility: hidden;
-    }
-
-
-
-
-    .container {
-        display: flex;
-        margin: 0 0;
-        padding: 0 0;
-        justify-content: space-around;
-        align-items: center;
-        height: 10vh;
-        min-width: 100%;
-
-
-        .logo {
-            height: 80%;
-            display: flex;
-            align-items: center;
-
-
-            .logo-main {
-                height: 80%;
-                width: 100%;
-                content: url("../img/logo-single.png");
-
-            }
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                list-style: none;
-
-                padding: 0px;
-                margin: 0px;
-            }
-
-            .link {
-                padding: 10px 20px;
-                border-radius: 5px;
-                transition: background-color 0.3s ease-in;
-
-                background-color: transparent;
-            }
-
-            li a:hover {
-                background-color: #00263D;
-                color: white;
-            }
-        }
-
-        .links {
-            height: auto !important;
-            width: 8%;
-
-            display: flex;
-            align-items: center;
-
-            justify-content: space-between;
-
-            .link-img {
-
-
-                height: inherit;
-                width: inherit;
-                align-items: center;
-
-
-                border-radius: 8px;
-
-                transition: transform 0.2s ease-in, box-shadow 0.1s ease-out;
-
-            }
-
-            a {
-                height: auto;
-                width: 50%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .link-img:hover {
-                transform: scale(1.1);
-                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-            }
-
-            .menu {
-                visibility: hidden;
-                position: absolute;
-            }
-        }
-
-    }
 }
 
+header .sidepanel {
+    position: absolute;
+    visibility: hidden;
+}
 
+header .container {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    min-width: 100%;
+}
+
+header .container .logo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+header .container .logo .logo-main {
+    height: 80%;
+    width: 100%;
+    content: url("../img/logo-single.png");
+}
+
+header .container .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+header .container .navbar .link {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in;
+    background-color: transparent;
+}
+
+header .container .navbar li a:hover {
+    background-color: #00263D;
+    color: white;
+}
+
+header .container .navbar li a {
+    font-size: 16px;
+    /* Match font size from style.css */
+}
+
+header .container .links {
+    height: auto !important;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .links .link-img {
+    height: inherit;
+    width: inherit;
+    align-items: center;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in, box-shadow 0.1s ease-out;
+}
+
+header .container .links a {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container .links .link-img:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .container .links .menu {
+    visibility: hidden;
+    position: absolute;
+}
 
 .about {
     margin: 0 20%;
     min-height: 80vh;
     padding-top: 10vh;
-    
-    
     margin-bottom: 24px;
-    
     text-align: center;
     background-color: #FBF6EF;
 }
 
 .about h1 {
-
     margin-bottom: 20px;
 }
 
@@ -190,41 +149,18 @@ header {
     color: #333;
 }
 
-/* .images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.store-image {
-    max-width: 400px;
-    text-align: center;
-}
-
-.store-img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin-top: 10px;
-} */
 .images {
     display: flex;
     flex-wrap: wrap;
-    /* Ensures the layout adjusts on smaller screens */
     gap: 20px;
     justify-content: center;
-    /* Centers the images horizontally */
     margin: 20px 0;
 }
 
 .store-image {
     text-align: center;
     flex: 1 1 45%;
-    /* Makes each image container take up 45% of the row, adjusts on smaller screens */
     max-width: 500px;
-    /* Prevents containers from becoming too large */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -239,19 +175,15 @@ header {
 
 .store-img {
     width: 100%;
-    /* Ensures images fit within their container */
     height: auto;
-    /* Maintains aspect ratio */
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .store-img:hover {
     transform: scale(1.05);
-    /* Adds a slight zoom effect on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 footer {
     background: #11415a;
@@ -263,29 +195,29 @@ footer {
     align-items: center;
     color: white;
     font-family: 'Open Sans', sans-serif;
-  }
-  
-  footer .footer-content {
+}
+
+footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-  }
-  
-  footer .footer-content .email-form {
+}
+
+footer .footer-content .email-form {
     display: flex;
     align-items: center;
-  }
-  
-  footer .footer-content .email-form input[type="email"] {
+}
+
+footer .footer-content .email-form input[type="email"] {
     padding: 10px;
     border: none;
     border-radius: 4px;
     margin-right: 10px;
     font-family: 'Open Sans', sans-serif;
-  }
-  
-  footer .footer-content .email-form button {
+}
+
+footer .footer-content .email-form button {
     padding: 10px 20px;
     background-color: #007bff;
     border: none;
@@ -293,12 +225,11 @@ footer {
     color: white;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-  }
-  
-  footer .footer-content .email-form button:hover {
+}
+
+footer .footer-content .email-form button:hover {
     background-color: #0056b3;
-  }
-  
+}
 
 @media (max-width: 1024px) {
     * {
@@ -318,152 +249,121 @@ footer {
     header {
         margin: 0 0;
         justify-content: center;
+    }
 
-        .sidepanel {
-            visibility: visible;
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            gap: 32px;
-            height: 100%;
-            /* Specify a height */
-            width: 0;
-            /* 0 width - change this with JavaScript */
-            position: fixed;
-            /* Stay in place */
-            z-index: 5;
-            /* Stay on top */
-            top: 0;
-            left: 0;
-            text-align: center;
-            background-color: #111;
-            /* Black*/
-            overflow-x: hidden;
-            /* Disable horizontal scroll */
-            padding-top: 60px;
-            /* Place content 60px from the top */
-            transition: 0.5s;
+    header .sidepanel {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 32px;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        text-align: center;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
 
-            /* 0.5 second transition effect to slide in the sidepanel */
-            a {
-                padding: 0;
-                margin: 0 0 0 0;
-                text-decoration: none;
-                font-size: 25px;
-                color: #818181;
+    header .sidepanel a {
+        padding: 0;
+        margin: 0 0 0 0;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+    }
 
-                transition: 0.3s;
-            }
+    header .sidepanel a:hover {
+        color: #f1f1f1;
+    }
 
-            a:hover {
-                color: #f1f1f1;
-            }
+    header .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
 
-            .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-        }
+    header .container {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        z-index: 1;
+        position: relative;
+        height: 100px;
+    }
 
+    header .container .logo {
+        display: flex;
+        align-items: center;
+        height: 60%;
+        margin: 0;
+        content: url("../img/logo-single.png");
+    }
 
+    header .container .logo .logo-main {
+        outline: 1px solid red;
+        position: absolute;
+        display: none;
+        content: url("../img/logo-single.png");
+    }
 
+    header .container .logo .logo-main2 {
+        height: 100%;
+        content: url("../img/Pearl Oasis logo.png");
+    }
 
+    header .container .navbar {
+        visibility: hidden;
+        position: absolute;
+    }
 
-        .container {
-            top: 0;
-            margin: 0;
-            width: 100%;
-            padding: 0;
-            z-index: 1;
-            position: relative;
-            height: 100px;
+    header .container .links {
+        height: 100%;
+        width: 2rem;
+    }
 
-            .logo {
+    header .container .links .link-img {
+        position: absolute;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
 
-                display: flex;
-                align-items: center;
-                height: 60%;
-                margin: 0;
+    header .container .links a {
+        position: absolute;
+        display: none;
+    }
 
-                content: url("../img/logo-single.png");
+    header .container .links .menu {
+        position: relative;
+        visibility: visible;
+        margin: 0 0;
+        padding: 0 0;
+        height: 30%;
+        width: 100%;
+        border: 0px;
+        border-radius: 8px;
+        background-color: black;
+    }
 
-                .logo-main {
-                    outline: 1px solid red;
-                    position: absolute;
-                    display: none;
-                    
+    header .container .links .menu .hamburger {
+        padding: 4px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 
-                    content: url("../img/logo-single.png");
-                }
-
-                .logo-main2 {
-                    height: 100%;
-
-                    content: url("../img/Pearl Oasis logo.png");
-                }
-            }
-
-            .navbar {
-                visibility: hidden;
-                position: absolute;
-            }
-
-            .links {
-
-
-
-
-
-                height: 100%;
-                width: 2rem;
-
-                .link-img {
-                    position: absolute;
-                    visibility: hidden;
-                    height: 0;
-                    width: 0;
-                }
-
-                a {
-                    position: absolute;
-                    display: none;
-                }
-
-                .menu {
-                    position: relative;
-                    visibility: visible;
-                    margin: 0 0;
-                    padding: 0 0;
-                    height: 30%;
-                    width: 100%;
-                    border: 0px;
-                    border-radius: 8px;
-                    background-color: black;
-
-                    .hamburger {
-
-                        padding: 4px;
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-
-                    }
-
-
-
-
-
-                }
-
-                .menu:hover {
-                    background-color: #444;
-                }
-            }
-
-        }
+    header .container .links .menu:hover {
+        background-color: #444;
     }
 
     .about {
@@ -472,23 +372,20 @@ footer {
 
     .footer .footer-content {
         display: flex;
-        flex-direction: column;;
-      }
-    
-      .footer {
+        flex-direction: column;
+    }
+
+    .footer {
         min-height: 20vh;
         height: auto;
-    
-      }
-    
-      .footer .footer-content div {
+    }
+
+    .footer .footer-content div {
         margin-bottom: 8px;
         margin-top: 8px;
-      }
-    
-      .footer .footer-content .email-form {
+    }
+
+    .footer .footer-content .email-form {
         margin-bottom: 16px;
-      }
-
+    }
 }
-

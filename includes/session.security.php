@@ -22,14 +22,18 @@ if (!isset($_SESSION['created'])) {
 if (!isset($_SESSION['user_agent'])) {
     $_SESSION['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
     $_SESSION['ip_address'] = $_SERVER['REMOTE_ADDR'];
-} elseif ($_SESSION['user_agent'] !== $_SERVER['HTTP_USER_AGENT'] || 
-          $_SESSION['ip_address'] !== $_SERVER['REMOTE_ADDR']) {
+} elseif (
+    $_SESSION['user_agent'] !== $_SERVER['HTTP_USER_AGENT'] ||
+    $_SESSION['ip_address'] !== $_SERVER['REMOTE_ADDR']
+) {
     session_destroy(); // Possible hijacking attempt
     exit("<h1 style='text-align:center;'>GOT YOU</h1>");
 }
 
-if (isset($_SESSION['last_activity']) && 
-    time() - $_SESSION['last_activity'] > 1800) { // 30 min
+if (
+    isset($_SESSION['last_activity']) &&
+    time() - $_SESSION['last_activity'] > 1800
+) { // 30 min
     session_unset();
     session_destroy();
 }

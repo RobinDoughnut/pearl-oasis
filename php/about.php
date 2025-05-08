@@ -1,10 +1,10 @@
-<?php 
-require __DIR__ . "/../includes/session.security.php" ;
+<?php
+require __DIR__ . "/../includes/session.security.php";
 require __DIR__ . '/../config.php';
 
-$about_style_path = BASE_PATH."/../assets/css/about.css";
-$contact_style_path = BASE_PATH."/../assets/css/contact.css";
-$script_path = BASE_PATH."/../assets/js/main.js";
+$about_style_path = BASE_PATH . "/../assets/css/about.css";
+$contact_style_path = BASE_PATH . "/../assets/css/contact.css";
+$script_path = BASE_PATH . "/../assets/js/main.js";
 ?>
 
 <!DOCTYPE html>
@@ -25,13 +25,13 @@ $script_path = BASE_PATH."/../assets/js/main.js";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $about_style_path?>" />
-    <link rel="stylesheet" href="<?php echo $contact_style_path?>" />
-    <script src="<?php echo $script_path?>"></script>
+    <link rel="stylesheet" href="<?php echo $about_style_path ?>" />
+    <link rel="stylesheet" href="<?php echo $contact_style_path ?>" />
+    <script src="<?php echo $script_path ?>"></script>
 </head>
 
 <body>
-    <?php require __DIR__.'/../includes/header.php'?>
+    <?php require __DIR__ . '/../includes/header.php' ?>
     <main>
         <div class="about">
 
@@ -67,7 +67,7 @@ $script_path = BASE_PATH."/../assets/js/main.js";
 
         </div>
     </main>
-    <?php require __DIR__.'/../includes/footer.php'?>
+    <?php require __DIR__ . '/../includes/footer.php' ?>
 </body>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxGm9MF6tGpO3xOQYih9BA8Ka8wAjTlJBmxu2oF4HQnGV6f0LdUgsBJ70paovuM2Zaelg/exec'

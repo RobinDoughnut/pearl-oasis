@@ -1,14 +1,20 @@
 :root {
   /* ========== Color Palette ========== */
   /* Primary Brand Colors */
-  --color-primary: #FBF6EF; /* Primary brand color (e.g., blue) */
-  --color-primary-light: #5AAEFF; /* Lighter shade of primary color */
-  --color-primary-dark: #0056B3; /* Darker shade of primary color */
+  --color-primary: #FBF6EF;
+  /* Primary brand color (e.g., blue) */
+  --color-primary-light: #5AAEFF;
+  /* Lighter shade of primary color */
+  --color-primary-dark: #0056B3;
+  /* Darker shade of primary color */
 
   /* Secondary Brand Colors */
-  --color-secondary: #6C757D; /* Neutral secondary color */
-  --color-secondary-light: #ADB5BD; /* Light secondary color */
-  --color-secondary-dark: #495057; /* Dark secondary color */
+  --color-secondary: #6C757D;
+  /* Neutral secondary color */
+  --color-secondary-light: #ADB5BD;
+  /* Light secondary color */
+  --color-secondary-dark: #495057;
+  /* Dark secondary color */
 
   /* Neutral Colors */
   --color-white: #FFFFFF;
@@ -18,31 +24,51 @@
   --color-gray-dark: #343A40;
 
   /* Feedback Colors */
-  --color-success: #28A745; /* Success feedback (green) */
-  --color-error: #DC3545; /* Error feedback (red) */
-  --color-warning: #FFC107; /* Warning feedback (yellow) */
-  --color-info: #17A2B8; /* Informational feedback (cyan) */
+  --color-success: #28A745;
+  /* Success feedback (green) */
+  --color-error: #DC3545;
+  /* Error feedback (red) */
+  --color-warning: #FFC107;
+  /* Warning feedback (yellow) */
+  --color-info: #17A2B8;
+  /* Informational feedback (cyan) */
 
   /* ========== Typography ========== */
   /* Font Families */
-  --font-family-primary: 'Arial', sans-serif; /* Main font */
-  --font-family-secondary: 'Georgia', serif; /* Accent font (e.g., for headings) */
+  --font-family-primary: 'Arial', sans-serif;
+  /* Main font */
+  --font-family-secondary: 'Georgia', serif;
+  /* Accent font (e.g., for headings) */
 
   /* Font Sizes */
-  --font-size-base: 16px; /* Base font size */
-  --font-size-sm: 14px; /* Small font size */
-  --font-size-lg: 18px; /* Large font size */
-  --font-size-h1: 32px; /* Heading 1 */
-  --font-size-h2: 28px; /* Heading 2 */
-  --font-size-h3: 24px; /* Heading 3 */
+  --font-size-base: 16px;
+  /* Base font size */
+  --font-size-sm: 14px;
+  /* Small font size */
+  --font-size-lg: 18px;
+  /* Large font size */
+  --font-size-h1: 32px;
+  /* Heading 1 */
+  --font-size-h2: 28px;
+  /* Heading 2 */
+  --font-size-h3: 24px;
+  /* Heading 3 */
+  --font-size-h1-large: 64px;
+  /* Large heading size */
+  --font-size-link: 1vw;
+  /* Link font size */
 
   /* Line Heights */
-  --line-height-base: 1.6; /* Base line height */
-  --line-height-heading: 1.2; /* Line height for headings */
+  --line-height-base: 1.6;
+  /* Base line height */
+  --line-height-heading: 1.2;
+  /* Line height for headings */
 
   /* Font Weights */
-  --font-weight-normal: 400; /* Normal weight */
-  --font-weight-bold: 700; /* Bold weight */
+  --font-weight-normal: 400;
+  /* Normal weight */
+  --font-weight-bold: 700;
+  /* Bold weight */
 
   /* ========== Spacing ========== */
   --spacing-xs: 4px;
@@ -50,11 +76,17 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 32px;
+  --spacing-card-gap: 32px;
+  /* Gap between cards */
+  --spacing-carousel-padding: 1em;
+  /* Padding for carousel */
 
   /* ========== Borders ========== */
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 12px;
+  --border-radius-card: 8px;
+  /* Card border radius */
   --border-width: 1px;
   --border-color: var(--color-gray);
 
@@ -62,15 +94,35 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.2);
+  --shadow-card: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  /* Card shadow */
 
   /* ========== Transitions ========== */
   --transition-fast: 0.2s ease-in-out;
   --transition-medium: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
+  --transition-card-hover: 0.3s ease;
+  /* Card hover transition */
 
   /* ========== Breakpoints ========== */
   --breakpoint-xs: 480px;
   --breakpoint-sm: 768px;
   --breakpoint-md: 1024px;
   --breakpoint-lg: 1200px;
+
+  /* ========== Additional Colors from products.css ========== */
+  --color-background: #FBF6EF;
+  /* Background color */
+  --color-dark-blue: #00263D;
+  /* Dark blue for hover and cards */
+  --color-light-blue: #a6e3e9;
+  /* Light blue for buttons */
+  --color-hover-blue: #94f4ff;
+  /* Hover state for buttons */
+  --color-footer-bg: #11415a;
+  /* Footer background color */
+
+  /* ========== Additional Typography from products.css ========== */
+  --font-family-secondary: 'Open Sans', sans-serif;
+  /* Secondary font */
 }
