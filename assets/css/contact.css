@@ -73,7 +73,7 @@ textarea {
     margin-top: 5px;
 }
 
-.submit-button {
+.submit-button-2 {
     display: block;
     width: 100%;
     padding: 10px;
@@ -88,7 +88,7 @@ textarea {
     transition: background-color 0.3s;
 }
 
-.submit-button:hover {
+.submit-button-2:hover {
     background-color: white;
     color: #11415a;
 }

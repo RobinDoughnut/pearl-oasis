@@ -13,7 +13,7 @@
                 <input type="text" id="name" name="name" placeholder="Your Name" value="DEFAULT">
                 <span class="error-message" id="nameError"></span>
             </div>
-            <div class="form-group email-form">
+            <div class="email-form">
                 <input type="hidden" name="access_key" value="cc171ee3-ff6d-4607-b89a-f60c5d040d72">
                 <label style="display: none;" for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>

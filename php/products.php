@@ -54,6 +54,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
                         <div class="carousel-inner" id="carousel<?php echo $j; ?>">
 
                             <?php foreach ($results as $result) {
+                                $id = htmlspecialchars($result["id"]);
                                 $product_name = htmlspecialchars($result["product_name"]);
                                 $img = htmlspecialchars($result["img"]);
                                 $description = htmlspecialchars($result["description"]);
@@ -82,7 +83,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
                                                 multiple sizes and
                                                 colors.</p>
                                             <a
-                                                href="https://wa.me/+8801892411397?text=<?php echo $message ?>"><button>Pricing</button></a>
+                                                href="product/<?php echo $id; ?>"><button>Details</button></a>
                                         </div>
                                     </div>
 

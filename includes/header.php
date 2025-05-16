@@ -1,14 +1,17 @@
 <?php
-
+$BASE_PATH = "http://localhost:80/pearl-oasis/";
+$home_path = $BASE_PATH . "php/index";
+$about_path = $BASE_PATH . "php/about";
+$products_path = $BASE_PATH . "php/products";
 ?>
 
 <header>
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.php">Home</a>
-        <a href="products.php">Products</a>
+        <a href="<?php echo $home_path?>">Home</a>
+        <a href="<?php echo $products_path?>">Products</a>
         <!-- <a href="index.php#category">Categories</a> -->
-        <a href="about.php">Contact Us</a>
+        <a href="<?php echo $about_path?>">Contact Us</a>
     </div>
 
 
@@ -18,10 +21,10 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a class="link" href="index.php">Home</a></li>
-                <li><a class="link" href="products.php">Products</a></li>
+                <li><a class="link" href="<?php echo $home_path?>">Home</a></li>
+                <li><a class="link" href="<?php echo $products_path?>">Products</a></li>
                 <!-- <li><a class="link" href="index.php#category">Categories</a></li> -->
-                <li><a class="link" href="about.php">Contact Us</a></li>
+                <li><a class="link" href="<?php echo $about_path?>">Contact Us</a></li>
             </ul>
         </nav>
         <div class="links">

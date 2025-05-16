@@ -59,7 +59,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         <span class="error-message" id="messageError"></span>
                     </div>
-                    <button type="submit" class="submit-button">
+                    <button type="submit" class="submit-button-2">
                         Send Message
                     </button>
                 </form>

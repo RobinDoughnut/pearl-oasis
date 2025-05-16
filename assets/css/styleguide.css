@@ -111,7 +111,7 @@
   --breakpoint-lg: 1200px;
 
   /* ========== Additional Colors from products.css ========== */
-  --color-background: #ffffff;
+  --color-background: var(--color-white);
   /* Background color */
   --color-dark-blue: #00263D;
   /* Dark blue for hover and cards */
