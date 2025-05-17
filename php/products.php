@@ -70,7 +70,7 @@ $script_path = BASE_PATH . "/../assets/js/main.js";
                                     <div class="card"
                                         onclick="window.location.href='https://wa.me/+8801892411397?text=<?php echo $message ?>'">
                                         <div class="img-wrapper">
-                                            <img src="<?php echo $img ?>" class="d-block w-100" alt="...">
+                                            <img src="<?php echo BASE_PATH.'/../assets/'.$img ?>" class="d-block w-100" alt="...">
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title"><?php echo $product_name; ?></h5>

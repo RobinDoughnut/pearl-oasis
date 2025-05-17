@@ -10,8 +10,8 @@ $result = getProductDetails($id);
 $product_name = htmlspecialchars($result[0]["product_name"]);
 $img = htmlspecialchars($result[0]["img"]);
 $description = htmlspecialchars($result[0]["description"]);
-$style_path = BASE_PATH . "assets/css/style.css";
-$script_path = BASE_PATH . "assets/js/main.js"
+$script_path = BASE_PATH . "assets/js/main.js";
+$product_style_path = BASE_PATH . "assets/css/product_details.css";
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,19 +38,31 @@ $script_path = BASE_PATH . "assets/js/main.js"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo $style_path ?>" />
+    <link rel="stylesheet" href="<?php echo $product_style_path ?>" />
     <script src="<?php echo $script_path ?>"></script>
 </head>
 
 <body>
     <?php require __DIR__ . '/../includes/header.php' ?>
     <main>
-        <div>
-           <?php 
-           echo $id;
-           echo $product_name;
-           echo $description;
-           ?>
+        <div class = "container_p">
+           <div class="wrap">
+                <div class="prod_image">
+                    <img src="<?php echo BASE_PATH.'/../assets/'.$img ?>" alt="Product Image" />
+
+                </div>
+                <div class = "prod_details">
+                    <h2><?php echo $product_name ?></h2>
+                    <p class="description"><?php echo $description ?></p>
+                    <div class="price">
+                        <span>Price: </span>
+                        <span class="amount"> <strong> 5000</strong></span>
+                    </div>
+                    
+                    
+                </div>
+
+           </div>
         </div>
     </main>
     <?php require __DIR__ . '/../includes/footer.php' ?>
